@@ -1,0 +1,10 @@
+COMPND    2146
+HETATM    1  N1  UNL     1      -1.696  -0.569  -0.000  1.00  0.00           N  
+HETATM    2  N2  UNL     1      -0.411   1.317   0.001  1.00  0.00           N  
+HETATM    3  N3  UNL     1       0.707  -0.728   0.001  1.00  0.00           N  
+HETATM    4  N4  UNL     1       1.817   0.037  -0.001  1.00  0.00           N  
+HETATM    5  C1  UNL     1      -0.416  -0.058  -0.001  1.00  0.00           C  
+CONECT    1    5
+CONECT    2    5
+CONECT    3    4    5    5
+END

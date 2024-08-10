@@ -1,0 +1,2 @@
+protein_fingerprints filter=lfs diff=lfs merge=lfs -text
+/Users/gino/promisegat4/protein_fingerprints/protein_adjacencies.npy filter=lfs diff=lfs merge=lfs -text
