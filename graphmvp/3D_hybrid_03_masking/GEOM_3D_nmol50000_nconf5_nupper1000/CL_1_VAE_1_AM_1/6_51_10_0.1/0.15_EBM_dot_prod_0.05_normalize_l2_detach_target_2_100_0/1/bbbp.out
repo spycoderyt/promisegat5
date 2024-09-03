@@ -1,0 +1,472 @@
+11511809_1
+--dataset=bbbp --runseed=1 --eval_train --batch_size=256 --dropout_ratio=0.5 --input_model_file=../output/3D_hybrid_03_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1_AM_1/6_51_10_0.1/0.15_EBM_dot_prod_0.05_normalize_l2_detach_target_2_100_0/pretraining_model.pth
+start
+arguments	 Namespace(AE_loss='l2', AE_model='AE', CL_neg_samples=1, CL_similarity_metric='InfoNCE_dot_prod', JK='last', SSL_2D_mode='AM', SSL_masking_ratio=0, T=0.1, alpha_1=1, alpha_2=1, alpha_3=0.1, batch_size=256, beta=1, contextpred_neg_samples=1, csize=3, cutoff=10, data_dir_chirality='../datasets/chirality/d4_docking/d4_docking_rs.csv', dataset='bbbp', decay=0, detach_target=True, device=0, dropout_ratio=0.5, emb_dim=300, engg_n_layers=4, epochs=100, eval_train=True, flow_length=8, flow_model='planar', gamma_joao=0.1, gamma_joaov2=0.1, gnn_lr_scale=1, gnn_type='gin', graph_pooling='mean', input_data_dir='', input_model_file='../output/3D_hybrid_03_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1_AM_1/6_51_10_0.1/0.15_EBM_dot_prod_0.05_normalize_l2_detach_target_2_100_0/pretraining_model.pth', iw_samples=5, lr=0.001, lr_scale=1, m_dim=50, mask_edge=0, mask_rate=0.15, model_3d='schnet', normalize=False, num_filters=128, num_gaussians=51, num_interactions=6, num_layer=5, num_workers=8, output_model_dir='', readout='mean', runseed=1, schnet_lr_scale=1, se3_transformer_div=2, se3_transformer_n_heads=8, se3_transformer_num_channels=32, se3_transformer_num_degrees=4, se3_transformer_num_layers=7, se3_transformer_num_nlayers=1, seed=42, spherenet_basis_emb_size_angle=8, spherenet_basis_emb_size_dist=8, spherenet_basis_emb_size_torsion=8, spherenet_cutoff=3.0, spherenet_envelope_exponent=5, spherenet_int_emb_size=64, spherenet_num_after_skip=2, spherenet_num_before_skip=1, spherenet_num_layers=4, spherenet_num_output_layers=3, spherenet_num_radial=6, spherenet_num_spherical=3, spherenet_out_emb_channels=256, split='scaffold', split_path='../datasets/chirality/d4_docking/rs/split0.npy', verbose=False)
+Dataset: bbbp
+Data: Data(edge_attr=[105842, 2], edge_index=[2, 105842], id=[2039], x=[49068, 2], y=[2039])
+MoleculeDataset(2039)
+split via scaffold
+Data(edge_attr=[46, 2], edge_index=[2, 46], id=[1], x=[23, 2], y=[1])
+GNN_graphpred(
+(molecule_model): GNN(
+(x_embedding1): Embedding(120, 300)
+(x_embedding2): Embedding(3, 300)
+(gnns): ModuleList(
+(0): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(1): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(2): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(3): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(4): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+)
+(batch_norms): ModuleList(
+(0): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(1): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(2): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(3): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(4): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+)
+(graph_pred_linear): Linear(in_features=300, out_features=1, bias=True)
+)
+Epoch: 1
+Loss: 0.6701850982115982
+train: 0.791285	val: 0.901736	test: 0.609375
+
+Epoch: 2
+Loss: 0.5257850111726496
+train: 0.846368	val: 0.904547	test: 0.630883
+
+Epoch: 3
+Loss: 0.4266313464439002
+train: 0.880332	val: 0.900632	test: 0.659144
+
+Epoch: 4
+Loss: 0.3576012521344015
+train: 0.900058	val: 0.895714	test: 0.659433
+
+Epoch: 5
+Loss: 0.3291635998816295
+train: 0.921342	val: 0.906454	test: 0.667438
+
+Epoch: 6
+Loss: 0.2891407372191432
+train: 0.930968	val: 0.902841	test: 0.678723
+
+Epoch: 7
+Loss: 0.27738577332442615
+train: 0.939065	val: 0.918498	test: 0.679977
+
+Epoch: 8
+Loss: 0.262631836271188
+train: 0.944632	val: 0.922212	test: 0.681713
+
+Epoch: 9
+Loss: 0.2380470170470186
+train: 0.947237	val: 0.921610	test: 0.697145
+
+Epoch: 10
+Loss: 0.23631453768336033
+train: 0.953951	val: 0.916391	test: 0.698495
+
+Epoch: 11
+Loss: 0.23754177941709248
+train: 0.956419	val: 0.908863	test: 0.701292
+
+Epoch: 12
+Loss: 0.2232388425244484
+train: 0.958925	val: 0.909465	test: 0.692033
+
+Epoch: 13
+Loss: 0.22074745632932918
+train: 0.960780	val: 0.918097	test: 0.692323
+
+Epoch: 14
+Loss: 0.20464390560107923
+train: 0.966090	val: 0.921710	test: 0.692708
+
+Epoch: 15
+Loss: 0.20722558410247816
+train: 0.964786	val: 0.920606	test: 0.700714
+
+Epoch: 16
+Loss: 0.20232691294481592
+train: 0.968398	val: 0.912476	test: 0.695795
+
+Epoch: 17
+Loss: 0.19936010310902935
+train: 0.964586	val: 0.923015	test: 0.699460
+
+Epoch: 18
+Loss: 0.20525504503090547
+train: 0.969117	val: 0.923918	test: 0.698206
+
+Epoch: 19
+Loss: 0.18867115142043264
+train: 0.972672	val: 0.907257	test: 0.712867
+
+Epoch: 20
+Loss: 0.19454959598285718
+train: 0.973393	val: 0.920305	test: 0.709973
+
+Epoch: 21
+Loss: 0.19670341397380756
+train: 0.976612	val: 0.935361	test: 0.700424
+
+Epoch: 22
+Loss: 0.1652817382399389
+train: 0.978953	val: 0.929439	test: 0.707176
+
+Epoch: 23
+Loss: 0.17522362235862526
+train: 0.977080	val: 0.911874	test: 0.709877
+
+Epoch: 24
+Loss: 0.17211694859449825
+train: 0.978798	val: 0.914182	test: 0.711227
+
+Epoch: 25
+Loss: 0.1695934956403766
+train: 0.977406	val: 0.909766	test: 0.718268
+
+Epoch: 26
+Loss: 0.17349068618786592
+train: 0.979737	val: 0.897922	test: 0.725116
+
+Epoch: 27
+Loss: 0.1599475063419433
+train: 0.983058	val: 0.920406	test: 0.711806
+
+Epoch: 28
+Loss: 0.16247479386660094
+train: 0.983443	val: 0.916792	test: 0.712191
+
+Epoch: 29
+Loss: 0.16365302675317014
+train: 0.985440	val: 0.901335	test: 0.700907
+
+Epoch: 30
+Loss: 0.16615234809617796
+train: 0.983260	val: 0.906554	test: 0.715760
+
+Epoch: 31
+Loss: 0.16174709119900618
+train: 0.983495	val: 0.913781	test: 0.710166
+
+Epoch: 32
+Loss: 0.16877141655057432
+train: 0.985529	val: 0.913380	test: 0.706790
+
+Epoch: 33
+Loss: 0.1604205328127664
+train: 0.984938	val: 0.906253	test: 0.728395
+
+Epoch: 34
+Loss: 0.1461273805413256
+train: 0.986341	val: 0.908461	test: 0.716917
+
+Epoch: 35
+Loss: 0.15397031715692133
+train: 0.988087	val: 0.906956	test: 0.715856
+
+Epoch: 36
+Loss: 0.15036258221950974
+train: 0.988431	val: 0.909565	test: 0.719522
+
+Epoch: 37
+Loss: 0.13804123523397913
+train: 0.989448	val: 0.908060	test: 0.701775
+
+Epoch: 38
+Loss: 0.1544977444426314
+train: 0.988654	val: 0.904748	test: 0.706887
+
+Epoch: 39
+Loss: 0.13737392916567398
+train: 0.989835	val: 0.907558	test: 0.726177
+
+Epoch: 40
+Loss: 0.13455069914382392
+train: 0.991013	val: 0.910368	test: 0.711902
+
+Epoch: 41
+Loss: 0.13776026681421813
+train: 0.988996	val: 0.914684	test: 0.697531
+
+Epoch: 42
+Loss: 0.1431816265805254
+train: 0.991014	val: 0.905751	test: 0.710841
+
+Epoch: 43
+Loss: 0.12795480470646178
+train: 0.991148	val: 0.906554	test: 0.725116
+
+Epoch: 44
+Loss: 0.13218490144560288
+train: 0.993082	val: 0.911774	test: 0.711613
+
+Epoch: 45
+Loss: 0.10650200885618329
+train: 0.994288	val: 0.907658	test: 0.704090
+
+Epoch: 46
+Loss: 0.12244501856701238
+train: 0.992834	val: 0.911171	test: 0.699749
+
+Epoch: 47
+Loss: 0.12239380541442269
+train: 0.992839	val: 0.904848	test: 0.709298
+
+Epoch: 48
+Loss: 0.11319724370091522
+train: 0.994875	val: 0.909064	test: 0.722512
+
+Epoch: 49
+Loss: 0.12189272418757795
+train: 0.993712	val: 0.922112	test: 0.718654
+
+Epoch: 50
+Loss: 0.11641410283220276
+train: 0.995429	val: 0.912777	test: 0.705150
+
+Epoch: 51
+Loss: 0.12198165334353864
+train: 0.995096	val: 0.910669	test: 0.705150
+
+Epoch: 52
+Loss: 0.1244909950153003
+train: 0.995350	val: 0.908461	test: 0.703993
+
+Epoch: 53
+Loss: 0.11415822595391147
+train: 0.994473	val: 0.901837	test: 0.709008
+
+Epoch: 54
+Loss: 0.1198475929861447
+train: 0.994465	val: 0.906855	test: 0.727238
+
+Epoch: 55
+Loss: 0.1082184538914546
+train: 0.995078	val: 0.915989	test: 0.711227
+
+Epoch: 56
+Loss: 0.12736487455740345
+train: 0.995128	val: 0.905149	test: 0.715567
+
+Epoch: 57
+Loss: 0.1120049464303702
+train: 0.995040	val: 0.910569	test: 0.727816
+
+Epoch: 58
+Loss: 0.12052786954531847
+train: 0.996335	val: 0.900130	test: 0.705536
+
+Epoch: 59
+Loss: 0.11253614246040029
+train: 0.995833	val: 0.892302	test: 0.710552
+
+Epoch: 60
+Loss: 0.11581655828534751
+train: 0.996204	val: 0.902841	test: 0.715085
+
+Epoch: 61
+Loss: 0.09666413544975631
+train: 0.996218	val: 0.906052	test: 0.705247
+
+Epoch: 62
+Loss: 0.11672485133250851
+train: 0.996930	val: 0.895413	test: 0.706211
+
+Epoch: 63
+Loss: 0.1103571066483376
+train: 0.997084	val: 0.895614	test: 0.698592
+
+Epoch: 64
+Loss: 0.11006142075612349
+train: 0.995363	val: 0.897822	test: 0.733893
+
+Epoch: 65
+Loss: 0.09885603342538589
+train: 0.996711	val: 0.891398	test: 0.737751
+
+Epoch: 66
+Loss: 0.1060603987242922
+train: 0.997399	val: 0.901034	test: 0.730903
+
+Epoch: 67
+Loss: 0.1006666128633164
+train: 0.997303	val: 0.899127	test: 0.722512
+
+Epoch: 68
+Loss: 0.10264789606108506
+train: 0.996572	val: 0.890294	test: 0.698206
+
+Epoch: 69
+Loss: 0.09505996414954276
+train: 0.996402	val: 0.887082	test: 0.686246
+
+Epoch: 70
+Loss: 0.10026403721445687
+train: 0.996998	val: 0.890394	test: 0.701582
+
+Epoch: 71
+Loss: 0.09572658836952568
+train: 0.997956	val: 0.891699	test: 0.709780
+
+Epoch: 72
+Loss: 0.10674764107796111
+train: 0.998005	val: 0.887885	test: 0.687596
+
+Epoch: 73
+Loss: 0.10224598578564037
+train: 0.998105	val: 0.887183	test: 0.693094
+
+Epoch: 74
+Loss: 0.10080091713351906
+train: 0.996325	val: 0.908060	test: 0.706019
+
+Epoch: 75
+Loss: 0.08826049593805893
+train: 0.998087	val: 0.895815	test: 0.701485
+
+Epoch: 76
+Loss: 0.08924549739777052
+train: 0.997989	val: 0.898625	test: 0.694155
+
+Epoch: 77
+Loss: 0.08980381497502611
+train: 0.997716	val: 0.900331	test: 0.698013
+
+Epoch: 78
+Loss: 0.08974799166506313
+train: 0.997521	val: 0.891398	test: 0.697531
+
+Epoch: 79
+Loss: 0.09055637438149125
+train: 0.998081	val: 0.883067	test: 0.701582
+
+Epoch: 80
+Loss: 0.09516480463495681
+train: 0.997700	val: 0.885978	test: 0.697724
+
+Epoch: 81
+Loss: 0.10515887796928909
+train: 0.998381	val: 0.893807	test: 0.682195
+
+Epoch: 82
+Loss: 0.08115788558094608
+train: 0.998388	val: 0.896216	test: 0.671971
+
+Epoch: 83
+Loss: 0.07935027496330496
+train: 0.998761	val: 0.892703	test: 0.691551
+
+Epoch: 84
+Loss: 0.07935663720872346
+train: 0.998503	val: 0.897220	test: 0.701292
+
+Epoch: 85
+Loss: 0.08416136273370145
+train: 0.998433	val: 0.889692	test: 0.692226
+
+Epoch: 86
+Loss: 0.09634133540813097
+train: 0.998444	val: 0.889290	test: 0.671007
+
+Epoch: 87
+Loss: 0.11407470152780161
+train: 0.998917	val: 0.886881	test: 0.678144
+
+Epoch: 88
+Loss: 0.09980196273883969
+train: 0.998056	val: 0.895815	test: 0.701871
+
+Epoch: 89
+Loss: 0.08694716300986968
+train: 0.998738	val: 0.896116	test: 0.696856
+
+Epoch: 90
+Loss: 0.08400526177907583
+train: 0.998631	val: 0.887584	test: 0.681424
+
+Epoch: 91
+Loss: 0.09233237886213476
+train: 0.998620	val: 0.893406	test: 0.704861
+
+Epoch: 92
+Loss: 0.08679719564720442
+train: 0.998458	val: 0.899829	test: 0.706211
+
+Epoch: 93
+Loss: 0.0856047030351706
+train: 0.998754	val: 0.883168	test: 0.680073
+
+Epoch: 94
+Loss: 0.0748608100471181
+train: 0.999025	val: 0.900331	test: 0.689911
+
+Epoch: 95
+Loss: 0.08175017137486837
+train: 0.998837	val: 0.906855	test: 0.700328
+
+Epoch: 96
+Loss: 0.07507113405497882
+train: 0.998994	val: 0.894209	test: 0.706983
+
+Epoch: 97
+Loss: 0.07054988721002228
+train: 0.999315	val: 0.891900	test: 0.692901
+
+Epoch: 98
+Loss: 0.07129677316219828
+train: 0.999011	val: 0.893907	test: 0.694444
+
+Epoch: 99
+Loss: 0.07592588644076297
+train: 0.999243	val: 0.892302	test: 0.689911
+
+Epoch: 100
+Loss: 0.07173455127274417
+train: 0.999038	val: 0.889391	test: 0.694155
+
+best train: 0.976612	val: 0.935361	test: 0.700424
+end

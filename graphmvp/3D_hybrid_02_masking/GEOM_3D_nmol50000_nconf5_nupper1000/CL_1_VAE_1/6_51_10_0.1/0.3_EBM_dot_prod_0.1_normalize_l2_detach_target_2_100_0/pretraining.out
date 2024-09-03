@@ -1,0 +1,239 @@
+--epochs=100 --dataset=GEOM_3D_nmol50000_nconf5_nupper1000 --batch_size=256 --SSL_masking_ratio=0.3 --CL_similarity_metric=EBM_dot_prod --T=0.1 --normalize --AE_model=VAE --AE_loss=l2 --detach_target --beta=2 --alpha_1=1 --alpha_2=1 --num_interactions=6 --num_gaussians=51 --cutoff=10 --schnet_lr_scale=0.1 --dropout_ratio=0 --num_workers=8 --output_model_dir=../output/3D_hybrid_02_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1/6_51_10_0.1/0.3_EBM_dot_prod_0.1_normalize_l2_detach_target_2_100_0/pretraining
+start
+WARNING:root:No normalization for BCUT2D_MWHI
+WARNING:root:No normalization for BCUT2D_MWLOW
+WARNING:root:No normalization for BCUT2D_CHGHI
+WARNING:root:No normalization for BCUT2D_CHGLO
+WARNING:root:No normalization for BCUT2D_LOGPHI
+WARNING:root:No normalization for BCUT2D_LOGPLOW
+WARNING:root:No normalization for BCUT2D_MRHI
+WARNING:root:No normalization for BCUT2D_MRLOW
+arguments	 Namespace(AE_loss='l2', AE_model='VAE', CL_neg_samples=1, CL_similarity_metric='EBM_dot_prod', JK='last', SSL_2D_mode='AM', SSL_masking_ratio=0.3, T=0.1, alpha_1=1.0, alpha_2=1.0, alpha_3=0.1, batch_size=256, beta=2.0, contextpred_neg_samples=1, csize=3, cutoff=10.0, data_dir_chirality='../datasets/chirality/d4_docking/d4_docking_rs.csv', dataset='GEOM_3D_nmol50000_nconf5_nupper1000', decay=0, detach_target=True, device=0, dropout_ratio=0.0, emb_dim=300, engg_n_layers=4, epochs=100, eval_train=True, flow_length=8, flow_model='planar', gamma_joao=0.1, gamma_joaov2=0.1, gnn_lr_scale=1, gnn_type='gin', graph_pooling='mean', input_data_dir='', input_model_file='', iw_samples=5, lr=0.001, lr_scale=1, m_dim=50, mask_edge=0, mask_rate=0.15, model_3d='schnet', normalize=True, num_filters=128, num_gaussians=51, num_interactions=6, num_layer=5, num_workers=8, output_model_dir='../output/3D_hybrid_02_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1/6_51_10_0.1/0.3_EBM_dot_prod_0.1_normalize_l2_detach_target_2_100_0/pretraining', readout='mean', runseed=0, schnet_lr_scale=0.1, se3_transformer_div=2, se3_transformer_n_heads=8, se3_transformer_num_channels=32, se3_transformer_num_degrees=4, se3_transformer_num_layers=7, se3_transformer_num_nlayers=1, seed=42, split='scaffold', split_path='../datasets/chirality/d4_docking/rs/split0.npy', verbose=False)
+Dataset: GEOM_3D_nmol50000_nconf5_nupper1000
+Data: Data(edge_attr=[23744740, 2], edge_index=[2, 23744740], id=[250000], mol_id=[250000], positions=[11368635, 3], x=[11368635, 2])
+Using 3d model	 schnet
+epoch: 1
+save model with loss: 0.70446
+CL Loss: 0.47351	CL Acc: 0.90930		AE Loss: 0.23095	AE Acc: 0.00000	Time: 154.38919
+epoch: 2
+save model with loss: 0.28778
+CL Loss: 0.26132	CL Acc: 0.96530		AE Loss: 0.02646	AE Acc: 0.00000	Time: 158.63520
+epoch: 3
+save model with loss: 0.23979
+CL Loss: 0.22080	CL Acc: 0.97485		AE Loss: 0.01899	AE Acc: 0.00000	Time: 153.50429
+epoch: 4
+save model with loss: 0.21741
+CL Loss: 0.20007	CL Acc: 0.97916		AE Loss: 0.01734	AE Acc: 0.00000	Time: 153.39374
+epoch: 5
+save model with loss: 0.20402
+CL Loss: 0.18609	CL Acc: 0.98196		AE Loss: 0.01793	AE Acc: 0.00000	Time: 155.31886
+epoch: 6
+save model with loss: 0.19586
+CL Loss: 0.17649	CL Acc: 0.98414		AE Loss: 0.01937	AE Acc: 0.00000	Time: 154.82876
+epoch: 7
+save model with loss: 0.18697
+CL Loss: 0.16623	CL Acc: 0.98627		AE Loss: 0.02074	AE Acc: 0.00000	Time: 155.20156
+epoch: 8
+save model with loss: 0.18088
+CL Loss: 0.15894	CL Acc: 0.98759		AE Loss: 0.02194	AE Acc: 0.00000	Time: 156.55547
+epoch: 9
+save model with loss: 0.17689
+CL Loss: 0.15407	CL Acc: 0.98862		AE Loss: 0.02282	AE Acc: 0.00000	Time: 158.53050
+epoch: 10
+save model with loss: 0.17034
+CL Loss: 0.14708	CL Acc: 0.98992		AE Loss: 0.02326	AE Acc: 0.00000	Time: 156.95813
+epoch: 11
+save model with loss: 0.16762
+CL Loss: 0.14372	CL Acc: 0.99059		AE Loss: 0.02390	AE Acc: 0.00000	Time: 154.97929
+epoch: 12
+save model with loss: 0.16414
+CL Loss: 0.13965	CL Acc: 0.99133		AE Loss: 0.02449	AE Acc: 0.00000	Time: 153.63450
+epoch: 13
+save model with loss: 0.16035
+CL Loss: 0.13543	CL Acc: 0.99206		AE Loss: 0.02492	AE Acc: 0.00000	Time: 153.04532
+epoch: 14
+save model with loss: 0.15754
+CL Loss: 0.13227	CL Acc: 0.99273		AE Loss: 0.02527	AE Acc: 0.00000	Time: 152.82545
+epoch: 15
+save model with loss: 0.15475
+CL Loss: 0.12909	CL Acc: 0.99328		AE Loss: 0.02567	AE Acc: 0.00000	Time: 152.59370
+epoch: 16
+save model with loss: 0.15268
+CL Loss: 0.12656	CL Acc: 0.99382		AE Loss: 0.02612	AE Acc: 0.00000	Time: 155.68193
+epoch: 17
+save model with loss: 0.14975
+CL Loss: 0.12313	CL Acc: 0.99432		AE Loss: 0.02663	AE Acc: 0.00000	Time: 154.83595
+epoch: 18
+save model with loss: 0.14821
+CL Loss: 0.12100	CL Acc: 0.99467		AE Loss: 0.02721	AE Acc: 0.00000	Time: 154.20380
+epoch: 19
+save model with loss: 0.14671
+CL Loss: 0.11880	CL Acc: 0.99503		AE Loss: 0.02791	AE Acc: 0.00000	Time: 153.08287
+epoch: 20
+save model with loss: 0.14529
+CL Loss: 0.11649	CL Acc: 0.99543		AE Loss: 0.02880	AE Acc: 0.00000	Time: 154.23038
+epoch: 21
+save model with loss: 0.14394
+CL Loss: 0.11435	CL Acc: 0.99574		AE Loss: 0.02959	AE Acc: 0.00000	Time: 155.13037
+epoch: 22
+save model with loss: 0.14343
+CL Loss: 0.11302	CL Acc: 0.99585		AE Loss: 0.03041	AE Acc: 0.00000	Time: 155.99908
+epoch: 23
+save model with loss: 0.14300
+CL Loss: 0.11147	CL Acc: 0.99609		AE Loss: 0.03153	AE Acc: 0.00000	Time: 153.32254
+epoch: 24
+CL Loss: 0.11025	CL Acc: 0.99624		AE Loss: 0.03282	AE Acc: 0.00000	Time: 153.37679
+epoch: 25
+save model with loss: 0.14244
+CL Loss: 0.10853	CL Acc: 0.99658		AE Loss: 0.03391	AE Acc: 0.00000	Time: 154.01318
+epoch: 26
+CL Loss: 0.10802	CL Acc: 0.99650		AE Loss: 0.03521	AE Acc: 0.00000	Time: 155.69593
+epoch: 27
+CL Loss: 0.10702	CL Acc: 0.99669		AE Loss: 0.03647	AE Acc: 0.00000	Time: 154.43054
+epoch: 28
+CL Loss: 0.10568	CL Acc: 0.99688		AE Loss: 0.03805	AE Acc: 0.00000	Time: 154.59704
+epoch: 29
+CL Loss: 0.10519	CL Acc: 0.99693		AE Loss: 0.03986	AE Acc: 0.00000	Time: 153.55817
+epoch: 30
+CL Loss: 0.10431	CL Acc: 0.99701		AE Loss: 0.04135	AE Acc: 0.00000	Time: 152.71884
+epoch: 31
+CL Loss: 0.10355	CL Acc: 0.99717		AE Loss: 0.04310	AE Acc: 0.00000	Time: 153.58982
+epoch: 32
+CL Loss: 0.10274	CL Acc: 0.99726		AE Loss: 0.04478	AE Acc: 0.00000	Time: 155.04175
+epoch: 33
+CL Loss: 0.10212	CL Acc: 0.99724		AE Loss: 0.04659	AE Acc: 0.00000	Time: 154.18246
+epoch: 34
+CL Loss: 0.10104	CL Acc: 0.99747		AE Loss: 0.04826	AE Acc: 0.00000	Time: 153.24739
+epoch: 35
+CL Loss: 0.10101	CL Acc: 0.99741		AE Loss: 0.04957	AE Acc: 0.00000	Time: 153.84872
+epoch: 36
+CL Loss: 0.10051	CL Acc: 0.99751		AE Loss: 0.05174	AE Acc: 0.00000	Time: 154.27743
+epoch: 37
+CL Loss: 0.09954	CL Acc: 0.99770		AE Loss: 0.05289	AE Acc: 0.00000	Time: 155.59756
+epoch: 38
+CL Loss: 0.09912	CL Acc: 0.99768		AE Loss: 0.05571	AE Acc: 0.00000	Time: 153.57949
+epoch: 39
+CL Loss: 0.09861	CL Acc: 0.99772		AE Loss: 0.05731	AE Acc: 0.00000	Time: 153.27733
+epoch: 40
+CL Loss: 0.09838	CL Acc: 0.99779		AE Loss: 0.05916	AE Acc: 0.00000	Time: 154.08267
+epoch: 41
+CL Loss: 0.09799	CL Acc: 0.99784		AE Loss: 0.06080	AE Acc: 0.00000	Time: 155.44301
+epoch: 42
+CL Loss: 0.09745	CL Acc: 0.99784		AE Loss: 0.06282	AE Acc: 0.00000	Time: 155.09191
+epoch: 43
+CL Loss: 0.09685	CL Acc: 0.99788		AE Loss: 0.06452	AE Acc: 0.00000	Time: 154.03734
+epoch: 44
+CL Loss: 0.09661	CL Acc: 0.99794		AE Loss: 0.06711	AE Acc: 0.00000	Time: 152.31866
+epoch: 45
+CL Loss: 0.09652	CL Acc: 0.99794		AE Loss: 0.06893	AE Acc: 0.00000	Time: 155.54063
+epoch: 46
+CL Loss: 0.09578	CL Acc: 0.99803		AE Loss: 0.07085	AE Acc: 0.00000	Time: 153.27147
+epoch: 47
+CL Loss: 0.09575	CL Acc: 0.99800		AE Loss: 0.07188	AE Acc: 0.00000	Time: 153.71697
+epoch: 48
+CL Loss: 0.09483	CL Acc: 0.99812		AE Loss: 0.07350	AE Acc: 0.00000	Time: 153.68526
+epoch: 49
+CL Loss: 0.09473	CL Acc: 0.99815		AE Loss: 0.07539	AE Acc: 0.00000	Time: 152.65516
+epoch: 50
+CL Loss: 0.09442	CL Acc: 0.99818		AE Loss: 0.07704	AE Acc: 0.00000	Time: 154.95314
+epoch: 51
+CL Loss: 0.09418	CL Acc: 0.99814		AE Loss: 0.07900	AE Acc: 0.00000	Time: 152.95786
+epoch: 52
+CL Loss: 0.09404	CL Acc: 0.99828		AE Loss: 0.08084	AE Acc: 0.00000	Time: 153.20388
+epoch: 53
+CL Loss: 0.09387	CL Acc: 0.99831		AE Loss: 0.08303	AE Acc: 0.00000	Time: 156.12608
+epoch: 54
+CL Loss: 0.09316	CL Acc: 0.99836		AE Loss: 0.08498	AE Acc: 0.00000	Time: 152.95288
+epoch: 55
+CL Loss: 0.09322	CL Acc: 0.99832		AE Loss: 0.08537	AE Acc: 0.00000	Time: 154.29299
+epoch: 56
+CL Loss: 0.09304	CL Acc: 0.99835		AE Loss: 0.08667	AE Acc: 0.00000	Time: 152.23517
+epoch: 57
+CL Loss: 0.09288	CL Acc: 0.99833		AE Loss: 0.08818	AE Acc: 0.00000	Time: 156.22586
+epoch: 58
+CL Loss: 0.09254	CL Acc: 0.99834		AE Loss: 0.09075	AE Acc: 0.00000	Time: 154.14514
+epoch: 59
+CL Loss: 0.09206	CL Acc: 0.99845		AE Loss: 0.09219	AE Acc: 0.00000	Time: 152.82433
+epoch: 60
+CL Loss: 0.09229	CL Acc: 0.99832		AE Loss: 0.09347	AE Acc: 0.00000	Time: 154.27667
+epoch: 61
+CL Loss: 0.09193	CL Acc: 0.99843		AE Loss: 0.09507	AE Acc: 0.00000	Time: 155.46288
+epoch: 62
+CL Loss: 0.09171	CL Acc: 0.99840		AE Loss: 0.09683	AE Acc: 0.00000	Time: 153.41105
+epoch: 63
+CL Loss: 0.09160	CL Acc: 0.99847		AE Loss: 0.09781	AE Acc: 0.00000	Time: 152.87286
+epoch: 64
+CL Loss: 0.09140	CL Acc: 0.99847		AE Loss: 0.09983	AE Acc: 0.00000	Time: 153.02316
+epoch: 65
+CL Loss: 0.09101	CL Acc: 0.99853		AE Loss: 0.10038	AE Acc: 0.00000	Time: 155.68284
+epoch: 66
+CL Loss: 0.09102	CL Acc: 0.99842		AE Loss: 0.10216	AE Acc: 0.00000	Time: 155.29682
+epoch: 67
+CL Loss: 0.09067	CL Acc: 0.99856		AE Loss: 0.10436	AE Acc: 0.00000	Time: 155.22949
+epoch: 68
+CL Loss: 0.09044	CL Acc: 0.99862		AE Loss: 0.10639	AE Acc: 0.00000	Time: 152.97965
+epoch: 69
+CL Loss: 0.09026	CL Acc: 0.99863		AE Loss: 0.10755	AE Acc: 0.00000	Time: 156.15123
+epoch: 70
+CL Loss: 0.09020	CL Acc: 0.99861		AE Loss: 0.10758	AE Acc: 0.00000	Time: 156.18142
+epoch: 71
+CL Loss: 0.09023	CL Acc: 0.99864		AE Loss: 0.10818	AE Acc: 0.00000	Time: 154.19865
+epoch: 72
+CL Loss: 0.09014	CL Acc: 0.99859		AE Loss: 0.11073	AE Acc: 0.00000	Time: 154.60372
+epoch: 73
+CL Loss: 0.08968	CL Acc: 0.99861		AE Loss: 0.11234	AE Acc: 0.00000	Time: 154.03911
+epoch: 74
+CL Loss: 0.08974	CL Acc: 0.99862		AE Loss: 0.11544	AE Acc: 0.00000	Time: 155.23947
+epoch: 75
+CL Loss: 0.08953	CL Acc: 0.99868		AE Loss: 0.11639	AE Acc: 0.00000	Time: 155.38188
+epoch: 76
+CL Loss: 0.08953	CL Acc: 0.99864		AE Loss: 0.11586	AE Acc: 0.00000	Time: 153.81473
+epoch: 77
+CL Loss: 0.08896	CL Acc: 0.99875		AE Loss: 0.11847	AE Acc: 0.00000	Time: 152.89422
+epoch: 78
+CL Loss: 0.08915	CL Acc: 0.99869		AE Loss: 0.12132	AE Acc: 0.00000	Time: 154.85811
+epoch: 79
+CL Loss: 0.08883	CL Acc: 0.99874		AE Loss: 0.12115	AE Acc: 0.00000	Time: 154.36892
+epoch: 80
+CL Loss: 0.08867	CL Acc: 0.99870		AE Loss: 0.12174	AE Acc: 0.00000	Time: 154.78576
+epoch: 81
+CL Loss: 0.08855	CL Acc: 0.99870		AE Loss: 0.12433	AE Acc: 0.00000	Time: 156.23900
+epoch: 82
+CL Loss: 0.08839	CL Acc: 0.99879		AE Loss: 0.12716	AE Acc: 0.00000	Time: 154.90498
+epoch: 83
+CL Loss: 0.08839	CL Acc: 0.99872		AE Loss: 0.12713	AE Acc: 0.00000	Time: 156.26022
+epoch: 84
+CL Loss: 0.08842	CL Acc: 0.99875		AE Loss: 0.12805	AE Acc: 0.00000	Time: 154.01847
+epoch: 85
+CL Loss: 0.08822	CL Acc: 0.99875		AE Loss: 0.12922	AE Acc: 0.00000	Time: 152.51129
+epoch: 86
+CL Loss: 0.08812	CL Acc: 0.99871		AE Loss: 0.13104	AE Acc: 0.00000	Time: 153.70407
+epoch: 87
+CL Loss: 0.08806	CL Acc: 0.99873		AE Loss: 0.13359	AE Acc: 0.00000	Time: 153.07288
+epoch: 88
+CL Loss: 0.08778	CL Acc: 0.99879		AE Loss: 0.13427	AE Acc: 0.00000	Time: 153.56583
+epoch: 89
+CL Loss: 0.08809	CL Acc: 0.99874		AE Loss: 0.13546	AE Acc: 0.00000	Time: 155.80148
+epoch: 90
+CL Loss: 0.08735	CL Acc: 0.99879		AE Loss: 0.13610	AE Acc: 0.00000	Time: 153.95622
+epoch: 91
+CL Loss: 0.08775	CL Acc: 0.99877		AE Loss: 0.13466	AE Acc: 0.00000	Time: 154.83412
+epoch: 92
+CL Loss: 0.08765	CL Acc: 0.99881		AE Loss: 0.13665	AE Acc: 0.00000	Time: 154.51600
+epoch: 93
+CL Loss: 0.08734	CL Acc: 0.99884		AE Loss: 0.13811	AE Acc: 0.00000	Time: 154.74731
+epoch: 94
+CL Loss: 0.08747	CL Acc: 0.99876		AE Loss: 0.14002	AE Acc: 0.00000	Time: 152.30246
+epoch: 95
+CL Loss: 0.08748	CL Acc: 0.99884		AE Loss: 0.14141	AE Acc: 0.00000	Time: 154.28340
+epoch: 96
+CL Loss: 0.08731	CL Acc: 0.99884		AE Loss: 0.14291	AE Acc: 0.00000	Time: 155.54752
+epoch: 97
+CL Loss: 0.08705	CL Acc: 0.99884		AE Loss: 0.14548	AE Acc: 0.00000	Time: 154.20000
+epoch: 98
+CL Loss: 0.08716	CL Acc: 0.99882		AE Loss: 0.14556	AE Acc: 0.00000	Time: 154.54064
+epoch: 99
+CL Loss: 0.08690	CL Acc: 0.99888		AE Loss: 0.14783	AE Acc: 0.00000	Time: 155.32029
+epoch: 100
+CL Loss: 0.08685	CL Acc: 0.99886		AE Loss: 0.14738	AE Acc: 0.00000	Time: 156.73241
+end

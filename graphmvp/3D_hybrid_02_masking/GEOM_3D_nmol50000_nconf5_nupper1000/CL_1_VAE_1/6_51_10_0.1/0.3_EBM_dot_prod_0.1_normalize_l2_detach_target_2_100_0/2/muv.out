@@ -1,0 +1,872 @@
+11288244_2
+--dataset=muv --runseed=2 --eval_train --batch_size=256 --dropout_ratio=0.5 --input_model_file=../output/3D_hybrid_02_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1/6_51_10_0.1/0.3_EBM_dot_prod_0.1_normalize_l2_detach_target_2_100_0/pretraining_model.pth
+start
+arguments	 Namespace(AE_loss='l2', AE_model='AE', CL_neg_samples=1, CL_similarity_metric='InfoNCE_dot_prod', JK='last', SSL_2D_mode='AM', SSL_masking_ratio=0, T=0.1, alpha_1=1, alpha_2=1, alpha_3=0.1, batch_size=256, beta=1, contextpred_neg_samples=1, csize=3, cutoff=10, data_dir_chirality='../datasets/chirality/d4_docking/d4_docking_rs.csv', dataset='muv', decay=0, detach_target=True, device=0, dropout_ratio=0.5, emb_dim=300, engg_n_layers=4, epochs=100, eval_train=True, flow_length=8, flow_model='planar', gamma_joao=0.1, gamma_joaov2=0.1, gnn_lr_scale=1, gnn_type='gin', graph_pooling='mean', input_data_dir='', input_model_file='../output/3D_hybrid_02_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1/6_51_10_0.1/0.3_EBM_dot_prod_0.1_normalize_l2_detach_target_2_100_0/pretraining_model.pth', iw_samples=5, lr=0.001, lr_scale=1, m_dim=50, mask_edge=0, mask_rate=0.15, model_3d='schnet', normalize=False, num_filters=128, num_gaussians=51, num_interactions=6, num_layer=5, num_workers=8, output_model_dir='', readout='mean', runseed=2, schnet_lr_scale=1, se3_transformer_div=2, se3_transformer_n_heads=8, se3_transformer_num_channels=32, se3_transformer_num_degrees=4, se3_transformer_num_layers=7, se3_transformer_num_nlayers=1, seed=42, split='scaffold', split_path='../datasets/chirality/d4_docking/rs/split0.npy', verbose=False)
+Dataset: muv
+Data: Data(edge_attr=[4892252, 2], edge_index=[2, 4892252], id=[93087], x=[2255846, 2], y=[1582479])
+MoleculeDataset(93087)
+split via scaffold
+Data(edge_attr=[30, 2], edge_index=[2, 30], id=[1], x=[15, 2], y=[17])
+GNN_graphpred(
+(molecule_model): GNN(
+(x_embedding1): Embedding(120, 300)
+(x_embedding2): Embedding(3, 300)
+(gnns): ModuleList(
+(0): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(1): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(2): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(3): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+(4): GINConv(
+(mlp): Sequential(
+(0): Linear(in_features=300, out_features=600, bias=True)
+(1): ReLU()
+(2): Linear(in_features=600, out_features=300, bias=True)
+)
+(edge_embedding1): Embedding(6, 300)
+(edge_embedding2): Embedding(3, 300)
+)
+)
+(batch_norms): ModuleList(
+(0): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(1): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(2): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(3): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(4): BatchNorm1d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+)
+(graph_pred_linear): Linear(in_features=300, out_features=17, bias=True)
+)
+Epoch: 1
+Loss: 0.10315341636590794
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.662078	val: 0.667567	test: 0.654121
+
+Epoch: 2
+Loss: 0.014052335201904796
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.733097	val: 0.754782	test: 0.694849
+
+Epoch: 3
+Loss: 0.013152806611804686
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.777585	val: 0.766283	test: 0.717752
+
+Epoch: 4
+Loss: 0.01287809032665323
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.814601	val: 0.768550	test: 0.712836
+
+Epoch: 5
+Loss: 0.01251385148746754
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.856507	val: 0.768763	test: 0.727952
+
+Epoch: 6
+Loss: 0.012197448246159386
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.874034	val: 0.788919	test: 0.709990
+
+Epoch: 7
+Loss: 0.012032696679422982
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.875544	val: 0.764222	test: 0.704239
+
+Epoch: 8
+Loss: 0.011777451374847717
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.888282	val: 0.786629	test: 0.731147
+
+Epoch: 9
+Loss: 0.011634519978080337
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.898970	val: 0.790075	test: 0.743564
+
+Epoch: 10
+Loss: 0.011491459909710058
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.896879	val: 0.764725	test: 0.724920
+
+Epoch: 11
+Loss: 0.011375610670627189
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.913724	val: 0.788631	test: 0.746879
+
+Epoch: 12
+Loss: 0.011182827230648642
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.915574	val: 0.760245	test: 0.740052
+
+Epoch: 13
+Loss: 0.011345233955465597
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.925506	val: 0.797170	test: 0.687194
+
+Epoch: 14
+Loss: 0.010965402130626134
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.934116	val: 0.792430	test: 0.737069
+
+Epoch: 15
+Loss: 0.010778536355274631
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.933242	val: 0.788074	test: 0.734350
+
+Epoch: 16
+Loss: 0.010660897126895195
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.937827	val: 0.793183	test: 0.715736
+
+Epoch: 17
+Loss: 0.010678631223599178
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.941587	val: 0.787147	test: 0.711433
+
+Epoch: 18
+Loss: 0.010427432118932689
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.934932	val: 0.818866	test: 0.753225
+
+Epoch: 19
+Loss: 0.010467268669391726
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.954196	val: 0.793513	test: 0.732068
+
+Epoch: 20
+Loss: 0.010137123819369147
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.952315	val: 0.799420	test: 0.746271
+
+Epoch: 21
+Loss: 0.010027822080337012
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.949391	val: 0.787296	test: 0.754501
+
+Epoch: 22
+Loss: 0.009928088711659056
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.953374	val: 0.796142	test: 0.733103
+
+Epoch: 23
+Loss: 0.010024334400920935
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.955247	val: 0.779385	test: 0.731031
+
+Epoch: 24
+Loss: 0.009597677228698632
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.963833	val: 0.787094	test: 0.714004
+
+Epoch: 25
+Loss: 0.009492906737333273
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.959882	val: 0.781808	test: 0.732822
+
+Epoch: 26
+Loss: 0.009536808211417582
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.962409	val: 0.786320	test: 0.717723
+
+Epoch: 27
+Loss: 0.009329001256157689
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.973117	val: 0.805003	test: 0.722519
+
+Epoch: 28
+Loss: 0.00925209209858679
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.971887	val: 0.809014	test: 0.735213
+
+Epoch: 29
+Loss: 0.00903280140991637
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.975533	val: 0.768014	test: 0.722593
+
+Epoch: 30
+Loss: 0.008981602922764254
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.965142	val: 0.757986	test: 0.706745
+
+Epoch: 31
+Loss: 0.00885704584935353
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.974912	val: 0.782623	test: 0.722848
+
+Epoch: 32
+Loss: 0.008784340978404406
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.974676	val: 0.776964	test: 0.757366
+
+Epoch: 33
+Loss: 0.008666374197659822
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.978452	val: 0.777570	test: 0.734021
+
+Epoch: 34
+Loss: 0.008764142919841924
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.979060	val: 0.783754	test: 0.745319
+
+Epoch: 35
+Loss: 0.008288343718651494
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.980861	val: 0.779841	test: 0.741782
+
+Epoch: 36
+Loss: 0.008372134565508336
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.980424	val: 0.789643	test: 0.768093
+
+Epoch: 37
+Loss: 0.008388869769825636
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.984537	val: 0.796677	test: 0.753495
+
+Epoch: 38
+Loss: 0.007948280705291204
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.984489	val: 0.764047	test: 0.776710
+
+Epoch: 39
+Loss: 0.008437628672783002
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.985504	val: 0.800862	test: 0.733291
+
+Epoch: 40
+Loss: 0.00781889676087934
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.987403	val: 0.785224	test: 0.756982
+
+Epoch: 41
+Loss: 0.007780524726477497
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.985944	val: 0.771145	test: 0.711187
+
+Epoch: 42
+Loss: 0.007928812770805328
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.987522	val: 0.778938	test: 0.770082
+
+Epoch: 43
+Loss: 0.007542880088435637
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.985101	val: 0.762234	test: 0.757726
+
+Epoch: 44
+Loss: 0.007693146390286963
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.988830	val: 0.790593	test: 0.757940
+
+Epoch: 45
+Loss: 0.007467173135298295
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.990294	val: 0.762380	test: 0.763820
+
+Epoch: 46
+Loss: 0.007388650871250601
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.991267	val: 0.760610	test: 0.720301
+
+Epoch: 47
+Loss: 0.007288473628607122
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.990585	val: 0.782680	test: 0.769901
+
+Epoch: 48
+Loss: 0.007458481976680441
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.992419	val: 0.766688	test: 0.734890
+
+Epoch: 49
+Loss: 0.007054768997602993
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.992182	val: 0.761490	test: 0.683378
+
+Epoch: 50
+Loss: 0.006821327977903392
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.990064	val: 0.754713	test: 0.697685
+
+Epoch: 51
+Loss: 0.006608266807189521
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.993875	val: 0.776014	test: 0.716503
+
+Epoch: 52
+Loss: 0.006917875975063007
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.994434	val: 0.789255	test: 0.744247
+
+Epoch: 53
+Loss: 0.006700072869560426
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.993908	val: 0.764911	test: 0.733057
+
+Epoch: 54
+Loss: 0.006616515597150108
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.994855	val: 0.764629	test: 0.721535
+
+Epoch: 55
+Loss: 0.006541534334778407
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.995819	val: 0.778075	test: 0.709072
+
+Epoch: 56
+Loss: 0.006579965472400116
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.995712	val: 0.765782	test: 0.732888
+
+Epoch: 57
+Loss: 0.006439038182385168
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.995960	val: 0.773702	test: 0.731368
+
+Epoch: 58
+Loss: 0.006341354855182214
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.996782	val: 0.775999	test: 0.742069
+
+Epoch: 59
+Loss: 0.006072720455187859
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.996814	val: 0.766629	test: 0.713308
+
+Epoch: 60
+Loss: 0.006223711265155071
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.996677	val: 0.786026	test: 0.726924
+
+Epoch: 61
+Loss: 0.005879940470024162
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.997481	val: 0.780830	test: 0.744943
+
+Epoch: 62
+Loss: 0.005967503808706217
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.997455	val: 0.777969	test: 0.742997
+
+Epoch: 63
+Loss: 0.005748814553685332
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.997990	val: 0.801646	test: 0.738865
+
+Epoch: 64
+Loss: 0.0056522131606923515
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.997963	val: 0.785005	test: 0.701776
+
+Epoch: 65
+Loss: 0.0055083483687685016
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998345	val: 0.794233	test: 0.727583
+
+Epoch: 66
+Loss: 0.00553281367750313
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998292	val: 0.774074	test: 0.738603
+
+Epoch: 67
+Loss: 0.005604061068700981
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.997610	val: 0.777498	test: 0.710702
+
+Epoch: 68
+Loss: 0.005478980473921584
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998535	val: 0.763949	test: 0.734269
+
+Epoch: 69
+Loss: 0.005429159776460243
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.997584	val: 0.788527	test: 0.753663
+
+Epoch: 70
+Loss: 0.005251123560909731
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998175	val: 0.799443	test: 0.764640
+
+Epoch: 71
+Loss: 0.005191662746149577
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998026	val: 0.812329	test: 0.725308
+
+Epoch: 72
+Loss: 0.0052462876666752815
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998718	val: 0.810531	test: 0.747578
+
+Epoch: 73
+Loss: 0.004957814743324397
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998968	val: 0.784202	test: 0.737019
+
+Epoch: 74
+Loss: 0.004810937962949589
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999020	val: 0.815289	test: 0.709795
+
+Epoch: 75
+Loss: 0.004944856488549106
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998907	val: 0.795703	test: 0.723545
+
+Epoch: 76
+Loss: 0.00514341201043788
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999241	val: 0.794452	test: 0.734289
+
+Epoch: 77
+Loss: 0.005122405056738341
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999071	val: 0.780482	test: 0.737314
+
+Epoch: 78
+Loss: 0.004627451809477866
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999320	val: 0.797509	test: 0.711047
+
+Epoch: 79
+Loss: 0.004819134309106629
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999379	val: 0.808804	test: 0.736867
+
+Epoch: 80
+Loss: 0.004726706047384629
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999414	val: 0.779114	test: 0.718858
+
+Epoch: 81
+Loss: 0.004533473126345361
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.998918	val: 0.792763	test: 0.734781
+
+Epoch: 82
+Loss: 0.004483188388988258
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999523	val: 0.814635	test: 0.708390
+
+Epoch: 83
+Loss: 0.004465440826932827
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999606	val: 0.797191	test: 0.721048
+
+Epoch: 84
+Loss: 0.004326687184502137
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999496	val: 0.789709	test: 0.722387
+
+Epoch: 85
+Loss: 0.004523389769355551
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999704	val: 0.784991	test: 0.723649
+
+Epoch: 86
+Loss: 0.0042287905916838665
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999498	val: 0.788425	test: 0.725129
+
+Epoch: 87
+Loss: 0.0043583432968373696
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999623	val: 0.780798	test: 0.740568
+
+Epoch: 88
+Loss: 0.004022596993636702
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999514	val: 0.779997	test: 0.715591
+
+Epoch: 89
+Loss: 0.003948746754599073
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999658	val: 0.802136	test: 0.743337
+
+Epoch: 90
+Loss: 0.004070932016706112
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999627	val: 0.793815	test: 0.716007
+
+Epoch: 91
+Loss: 0.004018894160947189
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999629	val: 0.782259	test: 0.730495
+
+Epoch: 92
+Loss: 0.0040475202695693276
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999792	val: 0.784010	test: 0.707295
+
+Epoch: 93
+Loss: 0.00400171679455197
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999710	val: 0.800126	test: 0.725308
+
+Epoch: 94
+Loss: 0.003735743175228295
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999626	val: 0.789117	test: 0.727685
+
+Epoch: 95
+Loss: 0.003916071035626101
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999723	val: 0.782427	test: 0.728169
+
+Epoch: 96
+Loss: 0.00387166194466841
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999709	val: 0.767646	test: 0.761664
+
+Epoch: 97
+Loss: 0.00398619577725103
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999905	val: 0.789808	test: 0.730392
+
+Epoch: 98
+Loss: 0.0034701896071978344
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999762	val: 0.787178	test: 0.724633
+
+Epoch: 99
+Loss: 0.0035078909636040993
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999822	val: 0.791608	test: 0.730619
+
+Epoch: 100
+Loss: 0.003828869231149773
+Some target is missing!
+Missing ratio: 0.058824
+Some target is missing!
+Missing ratio: 0.117647
+train: 0.999881	val: 0.797975	test: 0.740155
+
+best train: 0.934932	val: 0.818866	test: 0.753225
+end

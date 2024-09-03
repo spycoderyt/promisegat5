@@ -1,0 +1,235 @@
+--epochs=100 --dataset=GEOM_3D_nmol50000_nconf5_nupper1000 --batch_size=256 --SSL_masking_ratio=0.15 --CL_similarity_metric=EBM_dot_prod --T=0.05 --normalize --AE_model=VAE --AE_loss=l2 --detach_target --beta=2 --alpha_1=1 --alpha_2=1 --SSL_2D_mode=AM --alpha_3=1 --num_interactions=6 --num_gaussians=51 --cutoff=10 --schnet_lr_scale=0.1 --dropout_ratio=0 --num_workers=8 --output_model_dir=../output/3D_hybrid_03_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1_AM_1/6_51_10_0.1/0.15_EBM_dot_prod_0.05_normalize_l2_detach_target_2_100_0/pretraining
+start
+arguments	 Namespace(AE_loss='l2', AE_model='VAE', CL_neg_samples=1, CL_similarity_metric='EBM_dot_prod', JK='last', SSL_2D_mode='AM', SSL_masking_ratio=0.15, T=0.05, alpha_1=1.0, alpha_2=1.0, alpha_3=1.0, batch_size=256, beta=2.0, contextpred_neg_samples=1, csize=3, cutoff=10.0, dataset='GEOM_3D_nmol50000_nconf5_nupper1000', decay=0, detach_target=True, device=0, dropout_ratio=0.0, emb_dim=300, engg_n_layers=4, epochs=100, eval_train=True, flow_length=8, flow_model='planar', gamma_joao=0.1, gamma_joaov2=0.1, gnn_lr_scale=1, gnn_type='gin', graph_pooling='mean', input_data_dir='', input_model_file='', iw_samples=5, lr=0.001, lr_scale=1, m_dim=50, mask_edge=0, mask_rate=0.15, model_3d='schnet', normalize=True, num_filters=128, num_gaussians=51, num_interactions=6, num_layer=5, num_workers=8, output_model_dir='../output/3D_hybrid_03_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1_AM_1/6_51_10_0.1/0.15_EBM_dot_prod_0.05_normalize_l2_detach_target_2_100_0/pretraining', readout='mean', runseed=0, schnet_lr_scale=0.1, seed=42, split='scaffold', verbose=False)
+========== Use AM for 2D SSL ==========
+Dataset: GEOM_3D_nmol50000_nconf5_nupper1000
+Data: Data(edge_attr=[23744740, 2], edge_index=[2, 23744740], id=[250000], mol_id=[250000], positions=[11368635, 3], x=[11368635, 2])
+epoch: 1
+save model with loss: 0.88093
+CL Loss: 0.37912	CL Acc: 0.92482		AE Loss: 0.24055	AE Acc: 0.00000	2D SSL Loss: 0.26127	2D SSL Acc: 0.93347Time: 215.75375
+epoch: 2
+save model with loss: 0.37058
+CL Loss: 0.17557	CL Acc: 0.97059		AE Loss: 0.03492	AE Acc: 0.00000	2D SSL Loss: 0.16010	2D SSL Acc: 0.95339Time: 215.03657
+epoch: 3
+save model with loss: 0.29634
+CL Loss: 0.12656	CL Acc: 0.98059		AE Loss: 0.02304	AE Acc: 0.00000	2D SSL Loss: 0.14675	2D SSL Acc: 0.95687Time: 215.10946
+epoch: 4
+save model with loss: 0.26255
+CL Loss: 0.10404	CL Acc: 0.98489		AE Loss: 0.01955	AE Acc: 0.00000	2D SSL Loss: 0.13896	2D SSL Acc: 0.95901Time: 215.01384
+epoch: 5
+save model with loss: 0.24022
+CL Loss: 0.08817	CL Acc: 0.98809		AE Loss: 0.01827	AE Acc: 0.00000	2D SSL Loss: 0.13379	2D SSL Acc: 0.96072Time: 214.78359
+epoch: 6
+save model with loss: 0.22552
+CL Loss: 0.07662	CL Acc: 0.99013		AE Loss: 0.01850	AE Acc: 0.00000	2D SSL Loss: 0.13040	2D SSL Acc: 0.96152Time: 214.66714
+epoch: 7
+save model with loss: 0.21474
+CL Loss: 0.06881	CL Acc: 0.99147		AE Loss: 0.01919	AE Acc: 0.00000	2D SSL Loss: 0.12675	2D SSL Acc: 0.96250Time: 214.64176
+epoch: 8
+save model with loss: 0.20448
+CL Loss: 0.06171	CL Acc: 0.99270		AE Loss: 0.02003	AE Acc: 0.00000	2D SSL Loss: 0.12274	2D SSL Acc: 0.96376Time: 214.97045
+epoch: 9
+save model with loss: 0.19930
+CL Loss: 0.05655	CL Acc: 0.99357		AE Loss: 0.02116	AE Acc: 0.00000	2D SSL Loss: 0.12159	2D SSL Acc: 0.96416Time: 215.04145
+epoch: 10
+save model with loss: 0.19229
+CL Loss: 0.05210	CL Acc: 0.99432		AE Loss: 0.02210	AE Acc: 0.00000	2D SSL Loss: 0.11809	2D SSL Acc: 0.96516Time: 214.77815
+epoch: 11
+save model with loss: 0.18783
+CL Loss: 0.04870	CL Acc: 0.99484		AE Loss: 0.02323	AE Acc: 0.00000	2D SSL Loss: 0.11590	2D SSL Acc: 0.96583Time: 215.02750
+epoch: 12
+save model with loss: 0.18232
+CL Loss: 0.04401	CL Acc: 0.99562		AE Loss: 0.02400	AE Acc: 0.00000	2D SSL Loss: 0.11432	2D SSL Acc: 0.96609Time: 214.62932
+epoch: 13
+save model with loss: 0.17818
+CL Loss: 0.04116	CL Acc: 0.99598		AE Loss: 0.02464	AE Acc: 0.00000	2D SSL Loss: 0.11238	2D SSL Acc: 0.96679Time: 214.88221
+epoch: 14
+save model with loss: 0.17558
+CL Loss: 0.03978	CL Acc: 0.99610		AE Loss: 0.02538	AE Acc: 0.00000	2D SSL Loss: 0.11042	2D SSL Acc: 0.96726Time: 214.63181
+epoch: 15
+save model with loss: 0.17234
+CL Loss: 0.03711	CL Acc: 0.99659		AE Loss: 0.02632	AE Acc: 0.00000	2D SSL Loss: 0.10891	2D SSL Acc: 0.96773Time: 214.64565
+epoch: 16
+save model with loss: 0.16780
+CL Loss: 0.03447	CL Acc: 0.99696		AE Loss: 0.02695	AE Acc: 0.00000	2D SSL Loss: 0.10638	2D SSL Acc: 0.96848Time: 214.83582
+epoch: 17
+save model with loss: 0.16602
+CL Loss: 0.03290	CL Acc: 0.99719		AE Loss: 0.02768	AE Acc: 0.00000	2D SSL Loss: 0.10544	2D SSL Acc: 0.96878Time: 214.88180
+epoch: 18
+save model with loss: 0.16385
+CL Loss: 0.03187	CL Acc: 0.99725		AE Loss: 0.02829	AE Acc: 0.00000	2D SSL Loss: 0.10369	2D SSL Acc: 0.96932Time: 215.12158
+epoch: 19
+save model with loss: 0.16201
+CL Loss: 0.03053	CL Acc: 0.99755		AE Loss: 0.02912	AE Acc: 0.00000	2D SSL Loss: 0.10236	2D SSL Acc: 0.96966Time: 214.82802
+epoch: 20
+save model with loss: 0.16059
+CL Loss: 0.02891	CL Acc: 0.99770		AE Loss: 0.02997	AE Acc: 0.00000	2D SSL Loss: 0.10171	2D SSL Acc: 0.96977Time: 214.94913
+epoch: 21
+save model with loss: 0.15926
+CL Loss: 0.02836	CL Acc: 0.99773		AE Loss: 0.03093	AE Acc: 0.00000	2D SSL Loss: 0.09998	2D SSL Acc: 0.97033Time: 214.84990
+epoch: 22
+save model with loss: 0.15813
+CL Loss: 0.02675	CL Acc: 0.99803		AE Loss: 0.03160	AE Acc: 0.00000	2D SSL Loss: 0.09978	2D SSL Acc: 0.97033Time: 214.72705
+epoch: 23
+save model with loss: 0.15713
+CL Loss: 0.02617	CL Acc: 0.99801		AE Loss: 0.03246	AE Acc: 0.00000	2D SSL Loss: 0.09850	2D SSL Acc: 0.97075Time: 214.85431
+epoch: 24
+save model with loss: 0.15581
+CL Loss: 0.02516	CL Acc: 0.99817		AE Loss: 0.03329	AE Acc: 0.00000	2D SSL Loss: 0.09736	2D SSL Acc: 0.97116Time: 215.13671
+epoch: 25
+save model with loss: 0.15542
+CL Loss: 0.02436	CL Acc: 0.99828		AE Loss: 0.03416	AE Acc: 0.00000	2D SSL Loss: 0.09689	2D SSL Acc: 0.97098Time: 214.96265
+epoch: 26
+save model with loss: 0.15538
+CL Loss: 0.02414	CL Acc: 0.99828		AE Loss: 0.03523	AE Acc: 0.00000	2D SSL Loss: 0.09601	2D SSL Acc: 0.97149Time: 214.79676
+epoch: 27
+save model with loss: 0.15492
+CL Loss: 0.02341	CL Acc: 0.99836		AE Loss: 0.03591	AE Acc: 0.00000	2D SSL Loss: 0.09561	2D SSL Acc: 0.97158Time: 214.57417
+epoch: 28
+save model with loss: 0.15308
+CL Loss: 0.02240	CL Acc: 0.99844		AE Loss: 0.03675	AE Acc: 0.00000	2D SSL Loss: 0.09394	2D SSL Acc: 0.97205Time: 215.53584
+epoch: 29
+CL Loss: 0.02208	CL Acc: 0.99850		AE Loss: 0.03765	AE Acc: 0.00000	2D SSL Loss: 0.09415	2D SSL Acc: 0.97194Time: 214.68699
+epoch: 30
+CL Loss: 0.02173	CL Acc: 0.99857		AE Loss: 0.03877	AE Acc: 0.00000	2D SSL Loss: 0.09410	2D SSL Acc: 0.97196Time: 214.74041
+epoch: 31
+CL Loss: 0.02107	CL Acc: 0.99863		AE Loss: 0.03971	AE Acc: 0.00000	2D SSL Loss: 0.09309	2D SSL Acc: 0.97226Time: 214.36105
+epoch: 32
+CL Loss: 0.02044	CL Acc: 0.99870		AE Loss: 0.04043	AE Acc: 0.00000	2D SSL Loss: 0.09248	2D SSL Acc: 0.97237Time: 214.47421
+epoch: 33
+CL Loss: 0.02013	CL Acc: 0.99876		AE Loss: 0.04160	AE Acc: 0.00000	2D SSL Loss: 0.09252	2D SSL Acc: 0.97244Time: 214.41780
+epoch: 34
+CL Loss: 0.01952	CL Acc: 0.99880		AE Loss: 0.04284	AE Acc: 0.00000	2D SSL Loss: 0.09164	2D SSL Acc: 0.97281Time: 214.61866
+epoch: 35
+CL Loss: 0.01928	CL Acc: 0.99887		AE Loss: 0.04377	AE Acc: 0.00000	2D SSL Loss: 0.09151	2D SSL Acc: 0.97268Time: 214.61544
+epoch: 36
+CL Loss: 0.01934	CL Acc: 0.99880		AE Loss: 0.04512	AE Acc: 0.00000	2D SSL Loss: 0.09051	2D SSL Acc: 0.97298Time: 214.91577
+epoch: 37
+CL Loss: 0.01888	CL Acc: 0.99887		AE Loss: 0.04606	AE Acc: 0.00000	2D SSL Loss: 0.09055	2D SSL Acc: 0.97302Time: 214.29655
+epoch: 38
+CL Loss: 0.01840	CL Acc: 0.99897		AE Loss: 0.04727	AE Acc: 0.00000	2D SSL Loss: 0.08923	2D SSL Acc: 0.97327Time: 214.85693
+epoch: 39
+CL Loss: 0.01812	CL Acc: 0.99899		AE Loss: 0.04801	AE Acc: 0.00000	2D SSL Loss: 0.08955	2D SSL Acc: 0.97326Time: 214.78960
+epoch: 40
+CL Loss: 0.01789	CL Acc: 0.99898		AE Loss: 0.04926	AE Acc: 0.00000	2D SSL Loss: 0.08851	2D SSL Acc: 0.97359Time: 214.40662
+epoch: 41
+CL Loss: 0.01778	CL Acc: 0.99902		AE Loss: 0.05064	AE Acc: 0.00000	2D SSL Loss: 0.08939	2D SSL Acc: 0.97323Time: 214.42437
+epoch: 42
+CL Loss: 0.01737	CL Acc: 0.99903		AE Loss: 0.05170	AE Acc: 0.00000	2D SSL Loss: 0.08839	2D SSL Acc: 0.97355Time: 214.54100
+epoch: 43
+CL Loss: 0.01732	CL Acc: 0.99899		AE Loss: 0.05300	AE Acc: 0.00000	2D SSL Loss: 0.08839	2D SSL Acc: 0.97348Time: 214.57407
+epoch: 44
+CL Loss: 0.01693	CL Acc: 0.99908		AE Loss: 0.05375	AE Acc: 0.00000	2D SSL Loss: 0.08782	2D SSL Acc: 0.97363Time: 214.74322
+epoch: 45
+CL Loss: 0.01698	CL Acc: 0.99908		AE Loss: 0.05528	AE Acc: 0.00000	2D SSL Loss: 0.08734	2D SSL Acc: 0.97386Time: 214.66660
+epoch: 46
+CL Loss: 0.01659	CL Acc: 0.99909		AE Loss: 0.05629	AE Acc: 0.00000	2D SSL Loss: 0.08747	2D SSL Acc: 0.97384Time: 214.59118
+epoch: 47
+CL Loss: 0.01639	CL Acc: 0.99917		AE Loss: 0.05792	AE Acc: 0.00000	2D SSL Loss: 0.08687	2D SSL Acc: 0.97399Time: 214.44770
+epoch: 48
+CL Loss: 0.01635	CL Acc: 0.99913		AE Loss: 0.05914	AE Acc: 0.00000	2D SSL Loss: 0.08687	2D SSL Acc: 0.97408Time: 214.48544
+epoch: 49
+CL Loss: 0.01587	CL Acc: 0.99918		AE Loss: 0.06047	AE Acc: 0.00000	2D SSL Loss: 0.08666	2D SSL Acc: 0.97402Time: 214.35468
+epoch: 50
+CL Loss: 0.01601	CL Acc: 0.99916		AE Loss: 0.06137	AE Acc: 0.00000	2D SSL Loss: 0.08580	2D SSL Acc: 0.97424Time: 214.44701
+epoch: 51
+CL Loss: 0.01554	CL Acc: 0.99928		AE Loss: 0.06308	AE Acc: 0.00000	2D SSL Loss: 0.08590	2D SSL Acc: 0.97428Time: 214.63329
+epoch: 52
+CL Loss: 0.01541	CL Acc: 0.99924		AE Loss: 0.06411	AE Acc: 0.00000	2D SSL Loss: 0.08559	2D SSL Acc: 0.97438Time: 214.42151
+epoch: 53
+CL Loss: 0.01548	CL Acc: 0.99920		AE Loss: 0.06544	AE Acc: 0.00000	2D SSL Loss: 0.08566	2D SSL Acc: 0.97429Time: 214.53255
+epoch: 54
+CL Loss: 0.01553	CL Acc: 0.99920		AE Loss: 0.06721	AE Acc: 0.00000	2D SSL Loss: 0.08451	2D SSL Acc: 0.97461Time: 214.55440
+epoch: 55
+CL Loss: 0.01507	CL Acc: 0.99925		AE Loss: 0.06863	AE Acc: 0.00000	2D SSL Loss: 0.08479	2D SSL Acc: 0.97446Time: 214.37345
+epoch: 56
+CL Loss: 0.01491	CL Acc: 0.99928		AE Loss: 0.06996	AE Acc: 0.00000	2D SSL Loss: 0.08442	2D SSL Acc: 0.97465Time: 214.58379
+epoch: 57
+CL Loss: 0.01467	CL Acc: 0.99930		AE Loss: 0.07133	AE Acc: 0.00000	2D SSL Loss: 0.08489	2D SSL Acc: 0.97453Time: 214.54475
+epoch: 58
+CL Loss: 0.01458	CL Acc: 0.99930		AE Loss: 0.07242	AE Acc: 0.00000	2D SSL Loss: 0.08418	2D SSL Acc: 0.97474Time: 214.54968
+epoch: 59
+CL Loss: 0.01474	CL Acc: 0.99925		AE Loss: 0.07406	AE Acc: 0.00000	2D SSL Loss: 0.08439	2D SSL Acc: 0.97459Time: 214.57692
+epoch: 60
+CL Loss: 0.01434	CL Acc: 0.99935		AE Loss: 0.07564	AE Acc: 0.00000	2D SSL Loss: 0.08327	2D SSL Acc: 0.97497Time: 214.61570
+epoch: 61
+CL Loss: 0.01440	CL Acc: 0.99928		AE Loss: 0.07698	AE Acc: 0.00000	2D SSL Loss: 0.08405	2D SSL Acc: 0.97482Time: 214.38677
+epoch: 62
+CL Loss: 0.01422	CL Acc: 0.99933		AE Loss: 0.07856	AE Acc: 0.00000	2D SSL Loss: 0.08350	2D SSL Acc: 0.97496Time: 214.58732
+epoch: 63
+CL Loss: 0.01420	CL Acc: 0.99933		AE Loss: 0.07923	AE Acc: 0.00000	2D SSL Loss: 0.08313	2D SSL Acc: 0.97511Time: 214.40072
+epoch: 64
+CL Loss: 0.01429	CL Acc: 0.99932		AE Loss: 0.08120	AE Acc: 0.00000	2D SSL Loss: 0.08348	2D SSL Acc: 0.97493Time: 214.42054
+epoch: 65
+CL Loss: 0.01398	CL Acc: 0.99932		AE Loss: 0.08226	AE Acc: 0.00000	2D SSL Loss: 0.08275	2D SSL Acc: 0.97519Time: 214.92565
+epoch: 66
+CL Loss: 0.01398	CL Acc: 0.99934		AE Loss: 0.08322	AE Acc: 0.00000	2D SSL Loss: 0.08281	2D SSL Acc: 0.97512Time: 214.68381
+epoch: 67
+CL Loss: 0.01412	CL Acc: 0.99933		AE Loss: 0.08455	AE Acc: 0.00000	2D SSL Loss: 0.08254	2D SSL Acc: 0.97534Time: 214.65875
+epoch: 68
+CL Loss: 0.01370	CL Acc: 0.99936		AE Loss: 0.08609	AE Acc: 0.00000	2D SSL Loss: 0.08331	2D SSL Acc: 0.97490Time: 214.72021
+epoch: 69
+CL Loss: 0.01369	CL Acc: 0.99938		AE Loss: 0.08741	AE Acc: 0.00000	2D SSL Loss: 0.08259	2D SSL Acc: 0.97522Time: 214.54391
+epoch: 70
+CL Loss: 0.01323	CL Acc: 0.99942		AE Loss: 0.08920	AE Acc: 0.00000	2D SSL Loss: 0.08226	2D SSL Acc: 0.97529Time: 214.77380
+epoch: 71
+CL Loss: 0.01358	CL Acc: 0.99936		AE Loss: 0.08942	AE Acc: 0.00000	2D SSL Loss: 0.08248	2D SSL Acc: 0.97531Time: 214.39995
+epoch: 72
+CL Loss: 0.01324	CL Acc: 0.99943		AE Loss: 0.09180	AE Acc: 0.00000	2D SSL Loss: 0.08136	2D SSL Acc: 0.97560Time: 214.58447
+epoch: 73
+CL Loss: 0.01311	CL Acc: 0.99945		AE Loss: 0.09362	AE Acc: 0.00000	2D SSL Loss: 0.08197	2D SSL Acc: 0.97537Time: 214.88936
+epoch: 74
+CL Loss: 0.01333	CL Acc: 0.99944		AE Loss: 0.09504	AE Acc: 0.00000	2D SSL Loss: 0.08145	2D SSL Acc: 0.97555Time: 214.74608
+epoch: 75
+CL Loss: 0.01300	CL Acc: 0.99944		AE Loss: 0.09495	AE Acc: 0.00000	2D SSL Loss: 0.08142	2D SSL Acc: 0.97552Time: 214.45564
+epoch: 76
+CL Loss: 0.01299	CL Acc: 0.99946		AE Loss: 0.09713	AE Acc: 0.00000	2D SSL Loss: 0.08150	2D SSL Acc: 0.97547Time: 214.28885
+epoch: 77
+CL Loss: 0.01306	CL Acc: 0.99941		AE Loss: 0.09832	AE Acc: 0.00000	2D SSL Loss: 0.08143	2D SSL Acc: 0.97550Time: 214.60370
+epoch: 78
+CL Loss: 0.01307	CL Acc: 0.99942		AE Loss: 0.09889	AE Acc: 0.00000	2D SSL Loss: 0.08102	2D SSL Acc: 0.97564Time: 214.45564
+epoch: 79
+CL Loss: 0.01289	CL Acc: 0.99943		AE Loss: 0.10055	AE Acc: 0.00000	2D SSL Loss: 0.08075	2D SSL Acc: 0.97582Time: 214.54984
+epoch: 80
+CL Loss: 0.01266	CL Acc: 0.99947		AE Loss: 0.10298	AE Acc: 0.00000	2D SSL Loss: 0.08092	2D SSL Acc: 0.97570Time: 214.50141
+epoch: 81
+CL Loss: 0.01239	CL Acc: 0.99953		AE Loss: 0.10432	AE Acc: 0.00000	2D SSL Loss: 0.08072	2D SSL Acc: 0.97573Time: 214.52468
+epoch: 82
+CL Loss: 0.01279	CL Acc: 0.99941		AE Loss: 0.10584	AE Acc: 0.00000	2D SSL Loss: 0.08009	2D SSL Acc: 0.97589Time: 214.24514
+epoch: 83
+CL Loss: 0.01257	CL Acc: 0.99947		AE Loss: 0.10651	AE Acc: 0.00000	2D SSL Loss: 0.07988	2D SSL Acc: 0.97597Time: 214.57846
+epoch: 84
+CL Loss: 0.01237	CL Acc: 0.99949		AE Loss: 0.10783	AE Acc: 0.00000	2D SSL Loss: 0.07991	2D SSL Acc: 0.97594Time: 214.76819
+epoch: 85
+CL Loss: 0.01252	CL Acc: 0.99944		AE Loss: 0.10994	AE Acc: 0.00000	2D SSL Loss: 0.08056	2D SSL Acc: 0.97568Time: 214.62645
+epoch: 86
+CL Loss: 0.01245	CL Acc: 0.99949		AE Loss: 0.11054	AE Acc: 0.00000	2D SSL Loss: 0.08030	2D SSL Acc: 0.97579Time: 214.30714
+epoch: 87
+CL Loss: 0.01227	CL Acc: 0.99951		AE Loss: 0.11241	AE Acc: 0.00000	2D SSL Loss: 0.08034	2D SSL Acc: 0.97588Time: 214.44585
+epoch: 88
+CL Loss: 0.01236	CL Acc: 0.99948		AE Loss: 0.11390	AE Acc: 0.00000	2D SSL Loss: 0.07962	2D SSL Acc: 0.97596Time: 214.35124
+epoch: 89
+CL Loss: 0.01206	CL Acc: 0.99949		AE Loss: 0.11461	AE Acc: 0.00000	2D SSL Loss: 0.07894	2D SSL Acc: 0.97628Time: 214.50468
+epoch: 90
+CL Loss: 0.01220	CL Acc: 0.99951		AE Loss: 0.11634	AE Acc: 0.00000	2D SSL Loss: 0.07965	2D SSL Acc: 0.97592Time: 214.71446
+epoch: 91
+CL Loss: 0.01221	CL Acc: 0.99951		AE Loss: 0.11828	AE Acc: 0.00000	2D SSL Loss: 0.07967	2D SSL Acc: 0.97605Time: 214.60765
+epoch: 92
+CL Loss: 0.01205	CL Acc: 0.99950		AE Loss: 0.11875	AE Acc: 0.00000	2D SSL Loss: 0.07912	2D SSL Acc: 0.97610Time: 214.41771
+epoch: 93
+CL Loss: 0.01193	CL Acc: 0.99953		AE Loss: 0.12036	AE Acc: 0.00000	2D SSL Loss: 0.07929	2D SSL Acc: 0.97607Time: 214.60406
+epoch: 94
+CL Loss: 0.01191	CL Acc: 0.99952		AE Loss: 0.12124	AE Acc: 0.00000	2D SSL Loss: 0.07893	2D SSL Acc: 0.97627Time: 214.74118
+epoch: 95
+CL Loss: 0.01209	CL Acc: 0.99948		AE Loss: 0.12203	AE Acc: 0.00000	2D SSL Loss: 0.07932	2D SSL Acc: 0.97605Time: 214.52021
+epoch: 96
+CL Loss: 0.01182	CL Acc: 0.99952		AE Loss: 0.12350	AE Acc: 0.00000	2D SSL Loss: 0.07913	2D SSL Acc: 0.97603Time: 214.62517
+epoch: 97
+CL Loss: 0.01195	CL Acc: 0.99948		AE Loss: 0.12482	AE Acc: 0.00000	2D SSL Loss: 0.07845	2D SSL Acc: 0.97636Time: 214.39760
+epoch: 98
+CL Loss: 0.01180	CL Acc: 0.99950		AE Loss: 0.12714	AE Acc: 0.00000	2D SSL Loss: 0.07888	2D SSL Acc: 0.97630Time: 214.58049
+epoch: 99
+CL Loss: 0.01152	CL Acc: 0.99956		AE Loss: 0.12807	AE Acc: 0.00000	2D SSL Loss: 0.07855	2D SSL Acc: 0.97632Time: 214.53343
+epoch: 100
+CL Loss: 0.01144	CL Acc: 0.99956		AE Loss: 0.12844	AE Acc: 0.00000	2D SSL Loss: 0.07798	2D SSL Acc: 0.97646Time: 214.47197
+end
