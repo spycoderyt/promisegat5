@@ -1,0 +1,1227 @@
+100%|██████████| 1/1 [00:00<00:00,  1.07it/s]
+  2%|▏         | 2/100 [00:00<00:24,  3.99it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:37<00:00,  2.70it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 12.79it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]
+Epoch: 0
+Accuracy: 0.37681159420289856
+Precision: 0.37681159378281875
+Recall: 0.9999999970414202
+Sensitivity: 0.9999999970414202
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5473684206094183
+ROC-AUC: 0.5069598077716971
+AUC: 0.5069598077716971
+Q9: 0.2928932188134524
+PPV: 0.37681159378281875
+NPV: 0.0
+TP: 338
+FP: 559
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|█████████▊| 98/100 [00:42<00:01,  1.75it/s]
+Epoch: 1
+Accuracy: 0.38290788013318533
+Precision: 0.38290787970820434
+Recall: 0.9999999971014493
+Sensitivity: 0.9999999971014493
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5537720701815633
+ROC-AUC: 0.5170420185590658
+AUC: 0.5170420185590658
+Q9: 0.2928932188134524
+PPV: 0.38290787970820434
+NPV: 0.0
+TP: 345
+FP: 556
+TN: 0
+FN: 0
+100%|██████████| 100/100 [00:42<00:00,  2.34it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 11.98it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:38<00:00,  2.61it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 15.67it/s]
+  1%|          | 1/100 [00:00<00:41,  2.37it/s]
+Epoch: 2
+Accuracy: 0.39635535307517084
+Precision: 0.39635535262374105
+Recall: 0.9999999971264368
+Sensitivity: 0.9999999971264368
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5676998364048125
+ROC-AUC: 0.48282097158967685
+AUC: 0.48282097158967685
+Q9: 0.2928932188134524
+PPV: 0.39635535262374105
+NPV: 0.0
+TP: 348
+FP: 530
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:41<00:00,  2.42it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+Epoch: 3
+Accuracy: 0.4306987399770905
+Precision: 0.4306987394837357
+Recall: 0.9999999973404256
+Sensitivity: 0.9999999973404256
+Specificity: 0.0
+MCC: nan
+F1-score: 0.6020816648502147
+ROC-AUC: 0.48505929192174324
+AUC: 0.48505929192174324
+Q9: 0.2928932188134524
+PPV: 0.4306987394837357
+NPV: 0.0
+TP: 376
+FP: 497
+TN: 0
+FN: 0
+finished with loss 0.0
+100%|██████████| 1/1 [00:00<00:00, 109.53it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:40<00:00,  2.47it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  8.47it/s]
+  3%|▎         | 3/100 [00:00<00:28,  3.42it/s]
+Epoch: 4
+Accuracy: 0.43050847457627117
+Precision: 0.43050847408982096
+Recall: 0.9999999973753281
+Sensitivity: 0.9999999973753281
+Specificity: 0.0
+MCC: nan
+F1-score: 0.6018957341217253
+ROC-AUC: 0.5031011748531433
+AUC: 0.5031011748531433
+Q9: 0.2928932188134524
+PPV: 0.43050847408982096
+NPV: 0.0
+TP: 381
+FP: 504
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|█████████▉| 99/100 [00:42<00:00,  3.22it/s]
+Epoch: 5
+Accuracy: 0.4050925925925926
+Precision: 0.40509259212373544
+Recall: 0.9999999971428571
+Sensitivity: 0.9999999971428571
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5766062598215763
+ROC-AUC: 0.48178432462479154
+AUC: 0.48178432462479154
+Q9: 0.2928932188134524
+PPV: 0.40509259212373544
+NPV: 0.0
+TP: 350
+FP: 514
+TN: 0
+FN: 0
+100%|██████████| 100/100 [00:43<00:00,  2.32it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  3.25it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|█████████▊| 98/100 [00:41<00:00,  3.41it/s]
+Epoch: 6
+Accuracy: 0.39862542955326463
+Precision: 0.398625429096649
+Recall: 0.9999999971264368
+Sensitivity: 0.9999999971264368
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5700245695577194
+ROC-AUC: 0.5131390257252326
+AUC: 0.5131390257252326
+Q9: 0.2928932188134524
+PPV: 0.398625429096649
+NPV: 0.0
+TP: 348
+FP: 525
+TN: 0
+100%|██████████| 100/100 [00:42<00:00,  2.36it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  5.91it/s]
+  3%|▎         | 3/100 [00:01<00:34,  2.82it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:40<00:00,  2.47it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 10.70it/s]
+  1%|          | 1/100 [00:00<00:44,  2.21it/s]
+Epoch: 7
+Accuracy: 0.41284403669724773
+Precision: 0.4128440362238027
+Recall: 0.9999999972222222
+Sensitivity: 0.9999999972222222
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5844155839412211
+ROC-AUC: 0.49637858072916663
+AUC: 0.49637858072916663
+Q9: 0.2928932188134524
+PPV: 0.4128440362238027
+NPV: 0.0
+TP: 360
+FP: 512
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:38<00:00,  2.57it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+Epoch: 8
+Accuracy: 0.4074492099322799
+Precision: 0.407449209472405
+Recall: 0.999999997229917
+Sensitivity: 0.999999997229917
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5789895745156458
+ROC-AUC: 0.5086162775359451
+AUC: 0.5086162775359451
+Q9: 0.2928932188134524
+PPV: 0.407449209472405
+NPV: 0.0
+TP: 361
+FP: 525
+TN: 0
+FN: 0
+finished with loss 0.23385345935821533
+100%|██████████| 1/1 [00:00<00:00, 15.90it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:40<00:00,  2.46it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  6.18it/s]
+  1%|          | 1/100 [00:00<01:15,  1.32it/s]
+Epoch: 9
+Accuracy: 0.3939732142857143
+Precision: 0.393973213846012
+Recall: 0.9999999971671388
+Sensitivity: 0.9999999971671388
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5652522013088452
+ROC-AUC: 0.5416973168683059
+AUC: 0.5416973168683059
+Q9: 0.2928932188134524
+PPV: 0.393973213846012
+NPV: 0.0
+TP: 353
+FP: 543
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:42<00:00,  2.36it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 15.53it/s]
+  3%|▎         | 3/100 [00:00<00:25,  3.80it/s]
+Epoch: 10
+Accuracy: 0.4042316258351893
+Precision: 0.40423162538504276
+Recall: 0.9999999972451791
+Sensitivity: 0.9999999972451791
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5757335443491407
+ROC-AUC: 0.48401946396848694
+AUC: 0.48401946396848694
+Q9: 0.2928932188134524
+PPV: 0.40423162538504276
+NPV: 0.0
+TP: 363
+FP: 535
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:38<00:00,  2.62it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 15.29it/s]
+  1%|          | 1/100 [00:00<00:24,  3.98it/s]
+Epoch: 11
+Accuracy: 0.41336353340883353
+Precision: 0.41336353294069816
+Recall: 0.999999997260274
+Sensitivity: 0.999999997260274
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5849358969671987
+ROC-AUC: 0.5208758660813455
+AUC: 0.5208758660813455
+Q9: 0.2928932188134524
+PPV: 0.41336353294069816
+NPV: 0.0
+TP: 365
+FP: 518
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|█████████▊| 98/100 [00:38<00:00,  2.58it/s]
+Epoch: 12
+Accuracy: 0.401123595505618
+Precision: 0.4011235950549173
+Recall: 0.9999999971988796
+Sensitivity: 0.9999999971988796
+Specificity: 0.0
+MCC: nan
+F1-score: 0.572574177568104
+ROC-AUC: 0.47542581760659236
+AUC: 0.47542581760659236
+Q9: 0.2928932188134524
+PPV: 0.4011235950549173
+NPV: 0.0
+TP: 357
+FP: 533
+TN: 0
+100%|██████████| 100/100 [00:38<00:00,  2.57it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  1.91it/s]
+  3%|▎         | 3/100 [00:01<00:35,  2.74it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:41<00:00,  2.39it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  3.75it/s]
+  2%|▏         | 2/100 [00:00<00:38,  2.53it/s]
+Epoch: 13
+Accuracy: 0.3866213151927438
+Precision: 0.3866213147543976
+Recall: 0.9999999970674487
+Sensitivity: 0.9999999970674487
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5576451344581805
+ROC-AUC: 0.49086626807096667
+AUC: 0.49086626807096667
+Q9: 0.2928932188134524
+PPV: 0.3866213147543976
+NPV: 0.0
+TP: 341
+FP: 541
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:43<00:00,  2.28it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 26.89it/s]
+  2%|▏         | 2/100 [00:01<00:56,  1.75it/s]
+Epoch: 14
+Accuracy: 0.4127708095781072
+Precision: 0.4127708091074449
+Recall: 0.999999997237569
+Sensitivity: 0.999999997237569
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5843422109892314
+ROC-AUC: 0.49674140428042696
+AUC: 0.49674140428042696
+Q9: 0.2928932188134524
+PPV: 0.4127708091074449
+NPV: 0.0
+TP: 362
+FP: 515
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:41<00:00,  2.43it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+  0%|          | 0/1 [00:00<?, ?it/s]
+Epoch: 15
+Accuracy: 0.4128233970753656
+Precision: 0.4128233966109973
+Recall: 0.9999999972752044
+Sensitivity: 0.9999999972752044
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5843949039933161
+ROC-AUC: 0.48453861171140133
+AUC: 0.48453861171140133
+Q9: 0.2928932188134524
+PPV: 0.4128233966109973
+NPV: 0.0
+TP: 367
+FP: 522
+TN: 0
+FN: 0
+100%|██████████| 1/1 [00:00<00:00,  6.44it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:39<00:00,  2.52it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 15.39it/s]
+  1%|          | 1/100 [00:00<00:37,  2.64it/s]
+Epoch: 16
+Accuracy: 0.37414187643020597
+Precision: 0.374141876002126
+Recall: 0.999999996941896
+Sensitivity: 0.999999996941896
+Specificity: 0.0
+MCC: nan
+F1-score: 0.544546211037014
+ROC-AUC: 0.46512811051663505
+AUC: 0.46512811051663505
+Q9: 0.2928932188134524
+PPV: 0.374141876002126
+NPV: 0.0
+TP: 327
+FP: 547
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:36<00:00,  2.75it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+  0%|          | 0/1 [00:00<?, ?it/s]
+Epoch: 17
+Accuracy: 0.39643652561247217
+Precision: 0.3964365251710061
+Recall: 0.9999999971910113
+Sensitivity: 0.9999999971910113
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5677830936461059
+ROC-AUC: 0.44365178904598035
+AUC: 0.44365178904598035
+Q9: 0.2928932188134524
+PPV: 0.3964365251710061
+NPV: 0.0
+TP: 356
+FP: 542
+TN: 0
+FN: 0
+100%|██████████| 1/1 [00:00<00:00, 11.09it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:42<00:00,  2.33it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  3.85it/s]
+  2%|▏         | 2/100 [00:00<00:43,  2.25it/s]
+Epoch: 18
+Accuracy: 0.4018058690744921
+Precision: 0.4018058686209866
+Recall: 0.9999999971910113
+Sensitivity: 0.9999999971910113
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5732689206334388
+ROC-AUC: 0.5083024167903328
+AUC: 0.5083024167903328
+Q9: 0.2928932188134524
+PPV: 0.4018058686209866
+NPV: 0.0
+TP: 356
+FP: 530
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|█████████▊| 98/100 [00:38<00:01,  1.99it/s]
+Epoch: 19
+Accuracy: 0.40736478711162255
+Precision: 0.40736478664284836
+Recall: 0.9999999971751412
+Sensitivity: 0.9999999971751412
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5789043331325393
+ROC-AUC: 0.49783884592178157
+AUC: 0.49783884592178157
+Q9: 0.2928932188134524
+PPV: 0.40736478664284836
+NPV: 0.0
+TP: 354
+FP: 515
+TN: 0
+100%|██████████| 100/100 [00:39<00:00,  2.55it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  2.45it/s]
+  3%|▎         | 3/100 [00:00<00:23,  4.09it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:39<00:00,  2.54it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00, 17.84it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]
+Epoch: 20
+Accuracy: 0.40914285714285714
+Precision: 0.4091428566752653
+Recall: 0.999999997206704
+Sensitivity: 0.999999997206704
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5806974853360117
+ROC-AUC: 0.5239240137017387
+AUC: 0.5239240137017387
+Q9: 0.2928932188134524
+PPV: 0.4091428566752653
+NPV: 0.0
+TP: 358
+FP: 517
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:38<00:00,  2.60it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  8.54it/s]
+  3%|▎         | 3/100 [00:01<00:30,  3.19it/s]
+Epoch: 21
+Accuracy: 0.3775055679287305
+Precision: 0.3775055675083457
+Recall: 0.9999999970501475
+Sensitivity: 0.9999999970501475
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5481002420791429
+ROC-AUC: 0.5133059983852328
+AUC: 0.5133059983852328
+Q9: 0.2928932188134524
+PPV: 0.3775055675083457
+NPV: 0.0
+TP: 339
+FP: 559
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:40<00:00,  2.49it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  5.67it/s]
+  5%|▌         | 5/100 [00:01<00:26,  3.54it/s]
+Epoch: 22
+Accuracy: 0.40607424071991
+Precision: 0.4060742402631336
+Recall: 0.999999997229917
+Sensitivity: 0.999999997229917
+Specificity: 0.0
+MCC: nan
+F1-score: 0.57759999953792
+ROC-AUC: 0.4737445437757072
+AUC: 0.4737445437757072
+Q9: 0.2928932188134524
+PPV: 0.4060742402631336
+NPV: 0.0
+TP: 361
+FP: 528
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:37<00:00,  2.67it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  4.51it/s]
+  3%|▎         | 3/100 [00:01<00:32,  2.99it/s]
+Epoch: 23
+Accuracy: 0.4222972972972973
+Precision: 0.4222972968217373
+Recall: 0.9999999973333333
+Sensitivity: 0.9999999973333333
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5938242275583339
+ROC-AUC: 0.46913580246913583
+AUC: 0.46913580246913583
+Q9: 0.2928932188134524
+PPV: 0.4222972968217373
+NPV: 0.0
+TP: 375
+FP: 513
+TN: 0
+FN: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 100/100 [00:48<00:00,  2.07it/s]
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  MCC = float(tp * tn - fp * fn) / (np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  5.55it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]
+Epoch: 24
+Accuracy: 0.40621531631520535
+Precision: 0.40621531586435594
+Recall: 0.9999999972677596
+Sensitivity: 0.9999999972677596
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5777426988336679
+ROC-AUC: 0.5044635105459374
+AUC: 0.5044635105459374
+Q9: 0.2928932188134524
+PPV: 0.40621531586435594
+NPV: 0.0
+TP: 366
+FP: 535
+TN: 0
+FN: 0
+  5%|▌         | 5/100 [00:02<00:41,  2.27it/s]
+  9%|▉         | 9/100 [00:04<00:36,  2.51it/s]
+ 12%|█▏        | 12/100 [00:06<00:43,  2.00it/s]
+ 17%|█▋        | 17/100 [00:08<00:33,  2.46it/s]
+ 20%|██        | 20/100 [00:10<00:46,  1.74it/s]
+ 25%|██▌       | 25/100 [00:13<00:36,  2.07it/s]
+ 28%|██▊       | 28/100 [00:14<00:34,  2.12it/s]
+ 32%|███▏      | 32/100 [00:16<00:32,  2.10it/s]
+ 37%|███▋      | 37/100 [00:18<00:28,  2.19it/s]
+ 42%|████▏     | 42/100 [00:20<00:19,  3.01it/s]
+ 47%|████▋     | 47/100 [00:22<00:21,  2.44it/s]
+ 52%|█████▏    | 52/100 [00:24<00:18,  2.57it/s]
+ 56%|█████▌    | 56/100 [00:26<00:17,  2.48it/s]
+ 62%|██████▏   | 62/100 [00:28<00:12,  3.02it/s]
+ 66%|██████▌   | 66/100 [00:30<00:15,  2.16it/s]
+ 70%|███████   | 70/100 [00:32<00:15,  1.94it/s]
+ 76%|███████▌  | 76/100 [00:35<00:08,  2.76it/s]
+ 80%|████████  | 80/100 [00:36<00:07,  2.76it/s]
+ 86%|████████▌ | 86/100 [00:38<00:04,  2.96it/s]
+ 90%|█████████ | 90/100 [00:40<00:04,  2.14it/s]
+ 96%|█████████▌| 96/100 [00:43<00:01,  2.66it/s]
+  2%|▏         | 2/100 [00:00<00:35,  2.80it/s] + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+  2%|▏         | 2/100 [00:00<00:35,  2.80it/s] + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+Epoch: 25
+Accuracy: 0.40939597315436244
+Precision: 0.4093959726964251
+Recall: 0.9999999972677596
+Sensitivity: 0.9999999972677596
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5809523804913076
+ROC-AUC: 0.5206263454214274
+AUC: 0.5206263454214274
+Q9: 0.2928932188134524
+PPV: 0.4093959726964251
+NPV: 0.0
+TP: 366
+FP: 528
+TN: 0
+FN: 0
+  7%|▋         | 7/100 [00:02<00:42,  2.20it/s] + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 10%|█         | 10/100 [00:04<00:50,  1.78it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 15%|█▌        | 15/100 [00:06<00:33,  2.52it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 21%|██        | 21/100 [00:08<00:25,  3.08it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 27%|██▋       | 27/100 [00:10<00:22,  3.23it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 32%|███▏      | 32/100 [00:12<00:24,  2.76it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 39%|███▉      | 39/100 [00:14<00:19,  3.06it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 43%|████▎     | 43/100 [00:16<00:21,  2.60it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 49%|████▉     | 49/100 [00:18<00:17,  2.91it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 53%|█████▎    | 53/100 [00:20<00:21,  2.18it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 59%|█████▉    | 59/100 [00:22<00:12,  3.27it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 64%|██████▍   | 64/100 [00:24<00:12,  2.98it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 69%|██████▉   | 69/100 [00:26<00:10,  3.06it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 75%|███████▌  | 75/100 [00:28<00:08,  2.81it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 80%|████████  | 80/100 [00:30<00:09,  2.07it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 85%|████████▌ | 85/100 [00:32<00:06,  2.17it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 90%|█████████ | 90/100 [00:34<00:04,  2.21it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 95%|█████████▌| 95/100 [00:36<00:01,  2.79it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+  0%|          | 0/100 [00:00<?, ?it/s]sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+  0%|          | 0/100 [00:00<?, ?it/s]sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+Epoch: 26
+Accuracy: 0.4163860830527497
+Precision: 0.41638608258542525
+Recall: 0.9999999973045822
+Sensitivity: 0.9999999973045822
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5879556255245993
+ROC-AUC: 0.5076793489529339
+AUC: 0.5076793489529339
+Q9: 0.2928932188134524
+PPV: 0.41638608258542525
+NPV: 0.0
+TP: 371
+FP: 520
+TN: 0
+FN: 0
+  5%|▌         | 5/100 [00:02<00:35,  2.65it/s] + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 10%|█         | 10/100 [00:03<00:32,  2.79it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 16%|█▌        | 16/100 [00:06<00:26,  3.18it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 21%|██        | 21/100 [00:07<00:28,  2.79it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 27%|██▋       | 27/100 [00:10<00:28,  2.59it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 32%|███▏      | 32/100 [00:12<00:32,  2.08it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 37%|███▋      | 37/100 [00:14<00:22,  2.77it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 42%|████▏     | 42/100 [00:16<00:20,  2.81it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 46%|████▌     | 46/100 [00:18<00:28,  1.90it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 51%|█████     | 51/100 [00:20<00:18,  2.59it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 57%|█████▋    | 57/100 [00:22<00:15,  2.74it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 62%|██████▏   | 62/100 [00:24<00:13,  2.79it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+ 67%|██████▋   | 67/100 [00:26<00:10,  3.28it/s]+ fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+Epoch: 27
+Accuracy: 0.4312638580931264
+Precision: 0.4312638576150068
+Recall: 0.9999999974293059
+Sensitivity: 0.9999999974293059
+Specificity: 0.0
+MCC: nan
+F1-score: 0.6026336168840948
+ROC-AUC: 0.4391928120787545
+AUC: 0.4391928120787545
+Q9: 0.2928932188134524
+PPV: 0.4312638576150068
+NPV: 0.0
+TP: 389
+FP: 513
+TN: 0
+FN: 0
+finished with loss 0.21955233812332153
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  9.52it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  0%|          | 0/1 [00:00<?, ?it/s]m8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+  0%|          | 0/1 [00:00<?, ?it/s]m8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+Epoch: 28
+Accuracy: 0.40816326530612246
+Precision: 0.4081632648433523
+Recall: 0.9999999972222222
+Sensitivity: 0.9999999972222222
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5797101444607808
+ROC-AUC: 0.49159216687952323
+AUC: 0.49159216687952323
+Q9: 0.2928932188134524
+PPV: 0.4081632648433523
+NPV: 0.0
+TP: 360
+FP: 522
+TN: 0
+FN: 0
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+100%|██████████| 1/1 [00:00<00:00,  5.56it/s]n/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+/var/folders/d3/q38hjcyx7tj50fgmqb4mcm8r0000gn/T/ipykernel_55766/1284111422.py:231: RuntimeWarning: invalid value encountered in scalar divide
+Epoch: 29
+Accuracy: 0.40468227424749165
+Precision: 0.4046822737963408
+Recall: 0.9999999972451791
+Sensitivity: 0.9999999972451791
+Specificity: 0.0
+MCC: nan
+F1-score: 0.5761904757331822
+ROC-AUC: 0.49074246035430913
+AUC: 0.49074246035430913
+Q9: 0.2928932188134524
+PPV: 0.4046822737963408
+NPV: 0.0
+TP: 363
+FP: 534
+TN: 0
+FN: 0

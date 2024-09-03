@@ -1,0 +1,41 @@
+2024-09-02 21:33:52,618 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Current SDK version is 0.17.8
+2024-09-02 21:33:52,618 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Configure stats pid to 55766
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Loading settings from /Users/gino/.config/wandb/settings
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Loading settings from /Users/gino/promisegat4/wandb/settings
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Loading settings from environment variables: {}
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Applying setup settings: {'_disable_service': False}
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_init.py:_log_setup():524] Logging user logs to /Users/gino/promisegat4/wandb/run-20240902_213352-zevc9qro/logs/debug.log
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/gino/promisegat4/wandb/run-20240902_213352-zevc9qro/logs/debug-internal.log
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x166040c80>
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_init.py:init():607] calling init triggers
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {}
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_init.py:init():657] starting backend
+2024-09-02 21:33:52,619 INFO    MainThread:55766 [wandb_init.py:init():661] setting up manager
+2024-09-02 21:33:52,624 INFO    MainThread:55766 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-09-02 21:33:52,626 INFO    MainThread:55766 [wandb_init.py:init():669] backend started and connected
+2024-09-02 21:33:52,635 INFO    MainThread:55766 [wandb_run.py:_label_probe_notebook():1344] probe notebook
+2024-09-02 21:33:52,635 INFO    MainThread:55766 [wandb_run.py:_label_probe_notebook():1354] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-09-02 21:33:52,635 INFO    MainThread:55766 [wandb_init.py:init():767] updated telemetry
+2024-09-02 21:33:52,670 INFO    MainThread:55766 [wandb_init.py:init():800] communicating run to backend with 90.0 second timeout
+2024-09-02 21:33:53,326 INFO    MainThread:55766 [wandb_init.py:init():851] starting run threads in backend
+2024-09-02 21:33:58,252 INFO    MainThread:55766 [wandb_run.py:_console_start():2463] atexit reg
+2024-09-02 21:33:58,252 INFO    MainThread:55766 [wandb_run.py:_redirect():2309] redirect: wrap_raw
+2024-09-02 21:33:58,252 INFO    MainThread:55766 [wandb_run.py:_redirect():2374] Wrapping output streams.
+2024-09-02 21:33:58,252 INFO    MainThread:55766 [wandb_run.py:_redirect():2399] Redirects installed.
+2024-09-02 21:33:58,254 INFO    MainThread:55766 [wandb_init.py:init():894] run started, returning control to user process
+2024-09-02 21:33:58,254 INFO    MainThread:55766 [wandb_run.py:_config_callback():1392] config_cb None None {'fold': 1, 'model_path': 'ppim/model/sep2_model_fold_1', 'result_path': 'ppim/result/sep2_results_fold_1.txt', 'protein_embed': 'gcn', 'mod_embed': 'gcn', 'radius': 1, 'dim': 20, 'layer_gnn': 2, 'lr': 0.0001, 'lr_decay': 0.5, 'decay_interval': 10, 'iteration': 30}
+2024-09-02 21:54:33,081 INFO    MainThread:55766 [wandb_run.py:_finish():2160] finishing run spycoderyt/promisegat4/zevc9qro
+2024-09-02 21:54:33,082 INFO    MainThread:55766 [jupyter.py:save_history():444] not saving jupyter history
+2024-09-02 21:54:33,082 INFO    MainThread:55766 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-09-02 21:54:33,082 INFO    MainThread:55766 [wandb_init.py:_jupyter_teardown():452] cleaning up jupyter logic
+2024-09-02 21:54:33,082 INFO    MainThread:55766 [wandb_run.py:_atexit_cleanup():2424] got exitcode: 0
+2024-09-02 21:54:33,082 INFO    MainThread:55766 [wandb_run.py:_restore():2406] restore
+2024-09-02 21:54:33,082 INFO    MainThread:55766 [wandb_run.py:_restore():2412] restore done
+2024-09-02 21:54:33,082 INFO    MainThread:55766 [wandb_run.py:_on_finish():2677] communicating current version
+2024-09-02 21:54:33,173 INFO    MainThread:55766 [wandb_run.py:_on_finish():2686] got version response 
+2024-09-02 21:54:42,288 INFO    MainThread:55766 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-09-02 21:54:42,290 INFO    MainThread:55766 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-09-02 21:54:42,300 INFO    MainThread:55766 [wandb_run.py:_footer_sync_info():4037] logging synced files

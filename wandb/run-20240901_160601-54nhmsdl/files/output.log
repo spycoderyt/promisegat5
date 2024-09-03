@@ -1,0 +1,3 @@
+  0%|          | 0/200 [00:00<?, ?it/s][16:06:09] DEPRECATION WARNING: please use MorganGenerator
+  0%|          | 0/200 [00:00<?, ?it/s]
+tensor([0.1000, 0.2000]) tensor(1)

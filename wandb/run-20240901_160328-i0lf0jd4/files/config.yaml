@@ -1,0 +1,67 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.4
+    cli_version: 0.17.8
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1725181408
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 23
+      4: 3.12.4
+      5: 0.17.8
+      8:
+      - 1
+      - 4
+      - 5
+      13: darwin-arm64
+fold:
+  desc: null
+  value: 1
+model_path:
+  desc: null
+  value: ppim/model/sep1_model_fold_1
+result_path:
+  desc: null
+  value: ppim/result/sep1_results_fold_1.txt
+protein_embed:
+  desc: null
+  value: gcn
+mod_embed:
+  desc: null
+  value: gcn
+radius:
+  desc: null
+  value: 1
+dim:
+  desc: null
+  value: 100
+layer_gnn:
+  desc: null
+  value: 2
+lr:
+  desc: null
+  value: 0.0001
+lr_decay:
+  desc: null
+  value: 0.5
+decay_interval:
+  desc: null
+  value: 10
+iteration:
+  desc: null
+  value: 30

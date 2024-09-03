@@ -1,0 +1,27 @@
+2024-09-01 19:06:57,604 INFO    StreamThr :46335 [internal.py:wandb_internal():85] W&B internal server running at pid: 46335, started at: 2024-09-01 19:06:57.603843
+2024-09-01 19:06:57,605 DEBUG   HandlerThread:46335 [handler.py:handle_request():158] handle_request: status
+2024-09-01 19:06:57,611 INFO    WriterThread:46335 [datastore.py:open_for_write():87] open: /Users/gino/promisegat4/wandb/run-20240901_190657-5gi8cjfr/run-5gi8cjfr.wandb
+2024-09-01 19:06:57,612 DEBUG   SenderThread:46335 [sender.py:send():391] send: header
+2024-09-01 19:06:57,645 DEBUG   SenderThread:46335 [sender.py:send():391] send: run
+2024-09-01 19:06:58,488 INFO    SenderThread:46335 [dir_watcher.py:__init__():211] watching files in: /Users/gino/promisegat4/wandb/run-20240901_190657-5gi8cjfr/files
+2024-09-01 19:06:58,488 INFO    SenderThread:46335 [sender.py:_start_run_threads():1200] run started: 5gi8cjfr with start time 1725192417.604466
+2024-09-01 19:06:58,496 DEBUG   HandlerThread:46335 [handler.py:handle_request():158] handle_request: run_start
+2024-09-01 19:06:58,504 DEBUG   HandlerThread:46335 [system_info.py:__init__():26] System info init
+2024-09-01 19:06:58,505 DEBUG   HandlerThread:46335 [system_info.py:__init__():41] System info init done
+2024-09-01 19:06:58,505 INFO    HandlerThread:46335 [system_monitor.py:start():194] Starting system monitor
+2024-09-01 19:06:58,505 INFO    SystemMonitor:46335 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-01 19:06:58,505 INFO    HandlerThread:46335 [system_monitor.py:probe():214] Collecting system info
+2024-09-01 19:06:58,505 INFO    SystemMonitor:46335 [interfaces.py:start():188] Started cpu monitoring
+2024-09-01 19:06:58,509 INFO    SystemMonitor:46335 [interfaces.py:start():188] Started disk monitoring
+2024-09-01 19:06:58,511 INFO    SystemMonitor:46335 [interfaces.py:start():188] Started gpuapple monitoring
+2024-09-01 19:06:58,513 INFO    SystemMonitor:46335 [interfaces.py:start():188] Started memory monitoring
+2024-09-01 19:06:58,515 INFO    SystemMonitor:46335 [interfaces.py:start():188] Started network monitoring
+2024-09-01 19:06:59,906 DEBUG   HandlerThread:46335 [system_info.py:probe():152] Probing system
+2024-09-01 19:06:59,910 DEBUG   HandlerThread:46335 [system_info.py:_probe_git():137] Probing git
+2024-09-01 19:06:59,924 DEBUG   HandlerThread:46335 [system_info.py:_probe_git():145] Probing git done
+2024-09-01 19:06:59,924 DEBUG   HandlerThread:46335 [system_info.py:probe():200] Probing system done
+2024-09-01 19:06:59,924 DEBUG   HandlerThread:46335 [system_monitor.py:probe():223] {'os': 'macOS-14.6-arm64-arm-64bit', 'python': '3.12.4', 'heartbeatAt': '2024-09-01T12:06:59.906649', 'startedAt': '2024-09-01T12:06:57.597874', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/spycoderyt/promisegat5.git', 'commit': '19e4be2473d639698384a1f1a420744afd3143fd'}, 'email': None, 'root': '/Users/gino/promisegat4', 'host': 'Ginos-MacBook-Pro.local', 'username': 'gino', 'executable': '/opt/anaconda3/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 460.4317207336426, 'used': 404.163028717041}}, 'gpuapple': {'type': 'Apple M1 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-09-01 19:06:59,924 INFO    HandlerThread:46335 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-01 19:06:59,924 INFO    HandlerThread:46335 [system_monitor.py:probe():227] Publishing system info
+2024-09-01 19:06:59,924 DEBUG   HandlerThread:46335 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-01 19:07:00,497 INFO    Thread-12 :46335 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/gino/promisegat4/wandb/run-20240901_190657-5gi8cjfr/files/conda-environment.yaml

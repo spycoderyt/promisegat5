@@ -1,0 +1,36 @@
+{
+    "os": "macOS-14.6-arm64-arm-64bit",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-09-02T15:13:18.001697",
+    "startedAt": "2024-09-02T15:13:16.952257",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/spycoderyt/promisegat5.git",
+        "commit": "19e4be2473d639698384a1f1a420744afd3143fd"
+    },
+    "email": null,
+    "root": "/Users/gino/promisegat4",
+    "host": "Ginos-MacBook-Pro.local",
+    "username": "gino",
+    "executable": "/opt/anaconda3/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 401.5875473022461
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M1 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
